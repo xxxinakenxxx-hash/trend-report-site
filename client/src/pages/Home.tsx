@@ -11,6 +11,8 @@ import { trends } from '@/lib/trendData';
 import TrendCard from '@/components/TrendCard';
 import ScoreMatrix from '@/components/ScoreMatrix';
 import EmailSection from '@/components/EmailSection';
+import PrintButton from '@/components/PrintButton';
+import PrintableReport from '@/components/PrintableReport';
 
 const HERO_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663293176239/eAWmuhhSB9A3wxsnzBFKCG/hero_banner-c3KmhiQN3242xasUbUL3Eu.webp';
 
@@ -124,6 +126,7 @@ export default function Home() {
               >
                 メール文案をコピー
               </button>
+              <PrintButton />
             </div>
           </motion.div>
         </div>
@@ -178,6 +181,15 @@ export default function Home() {
         {/* Email Section */}
         <EmailSection />
 
+        {/* Print CTA */}
+        <div className="mt-12 p-4 rounded-xl border flex items-center justify-between gap-4" style={{ background: '#162236', borderColor: '#243650' }}>
+          <div>
+            <p className="text-sm font-semibold text-slate-300">訪問先でも活用できます</p>
+            <p className="text-xs text-slate-500 mt-0.5">印刷またはPDF保存して、顧客訪問・商品提案・フェア企画の資料としてご活用ください</p>
+          </div>
+          <PrintButton label="印刷 / PDF保存" />
+        </div>
+
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-[#243650] text-center">
           <p className="text-xs text-slate-600">
@@ -190,6 +202,9 @@ export default function Home() {
           </p>
         </footer>
       </main>
+
+      {/* 印刷専用レイアウト（画面上は非表示、@media print で表示） */}
+      <PrintableReport />
     </div>
   );
 }

@@ -7,6 +7,8 @@ import { Link, useParams } from 'wouter';
 import { TrendingUp, ArrowLeft, Calendar, Tag, Archive, ExternalLink } from 'lucide-react';
 import { getIssueById, archiveIssues } from '@/lib/archiveData';
 import type { ArchiveTrendSummary } from '@/lib/archiveData';
+import PrintButton from '@/components/PrintButton';
+import PrintableArchive from '@/components/PrintableArchive';
 
 // スコアのドット表示（詳細データがないため総合スコアからの推定表示）
 function ScoreDots({ score, color }: { score: number; color: string }) {
@@ -234,6 +236,18 @@ export default function ArchiveDetailPage() {
           ))}
         </div>
 
+        {/* Print CTA */}
+        <div
+          className="mb-6 p-4 rounded-xl border flex items-center justify-between gap-4"
+          style={{ background: '#162236', borderColor: '#243650' }}
+        >
+          <div>
+            <p className="text-sm font-semibold text-slate-300">訪問先でも活用できます</p>
+            <p className="text-xs text-slate-500 mt-0.5">印刷またはPDF保存して、顧客訪問・商品提案の資料としてご活用ください</p>
+          </div>
+          <PrintButton label="印刷 / PDF保存" />
+        </div>
+
         {/* Latest Issue CTA */}
         {!issue.isLatest && (
           <div
@@ -296,6 +310,9 @@ export default function ArchiveDetailPage() {
           </p>
         </div>
       </main>
+
+      {/* 印刷専用レイアウト（画面上は非表示、@media print で表示） */}
+      <PrintableArchive issue={issue} />
     </div>
   );
 }
