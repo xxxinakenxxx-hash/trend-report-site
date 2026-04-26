@@ -5,7 +5,8 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, ChevronRight } from 'lucide-react';
+import { Link } from 'wouter';
+import { TrendingUp, ChevronRight, Archive } from 'lucide-react';
 import { trends } from '@/lib/trendData';
 import TrendCard from '@/components/TrendCard';
 import ScoreMatrix from '@/components/ScoreMatrix';
@@ -59,8 +60,14 @@ export default function Home() {
               </button>
             ))}
           </div>
-          <div className="text-xs text-slate-500">
-            2026年4月第4週号
+          <div className="flex items-center gap-3">
+            <Link href="/archive">
+              <a className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-amber-400 transition-colors px-3 py-1.5 rounded-md hover:bg-amber-500/10">
+                <Archive size={13} />
+                バックナンバー
+              </a>
+            </Link>
+            <span className="text-xs text-slate-600 hidden sm:block">2026年4月第4週号</span>
           </div>
         </div>
       </nav>
