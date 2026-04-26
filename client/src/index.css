@@ -530,6 +530,28 @@
   }
   .print-tag { color: #333; }
 
+  /* ── カテゴリ絞り込みバナー ── */
+  .print-filter-banner {
+    background: #f0f0f0;
+    border: 0.5pt solid #ccc;
+    border-radius: 3pt;
+    padding: 5pt 8pt;
+    margin-bottom: 6pt;
+    font-size: 8pt;
+  }
+  .print-filter-label {
+    font-weight: 700;
+    color: #333;
+  }
+  .print-filter-cats {
+    color: #111;
+    font-weight: 600;
+    margin: 0 4pt;
+  }
+  .print-filter-count {
+    color: #666;
+  }
+
   /* ── フッター ── */
   .print-footer {
     margin-top: 12pt;

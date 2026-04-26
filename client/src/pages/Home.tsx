@@ -3,16 +3,18 @@
 // Theme: Deep Navy (#0F1B2D) + Gold Amber (#F5A623) + Emerald Green (#10B981)
 // Font: Syne (headings) + Noto Sans JP (body) + Bebas Neue (numbers)
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useCallback, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
-import { TrendingUp, ChevronRight, Archive } from 'lucide-react';
+import { TrendingUp, ChevronRight, Archive, Filter } from 'lucide-react';
 import { trends } from '@/lib/trendData';
 import TrendCard from '@/components/TrendCard';
 import ScoreMatrix from '@/components/ScoreMatrix';
 import EmailSection from '@/components/EmailSection';
 import PrintButton from '@/components/PrintButton';
 import PrintableReport from '@/components/PrintableReport';
+import PrintFilterDialog from '@/components/PrintFilterDialog';
+import PrintableReportFiltered from '@/components/PrintableReportFiltered';
 
 const HERO_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663293176239/eAWmuhhSB9A3wxsnzBFKCG/hero_banner-c3KmhiQN3242xasUbUL3Eu.webp';
 
@@ -24,6 +26,19 @@ const NAV_ITEMS = [
 
 export default function Home() {
   const [activeNav, setActiveNav] = useState('');
+  const [showPrintDialog, setShowPrintDialog] = useState(false);
+  const [printCategories, setPrintCategories] = useState<string[]>([]);
+  const printRef = useRef<HTMLDivElement>(null);
+
+  // カテゴリ選択後に印刷を実行する
+  const handleFilterPrint = useCallback((selected: string[]) => {
+    setPrintCategories(selected);
+    setShowPrintDialog(false);
+    // DOM更新を待ってから印刷ダイアログを開く
+    setTimeout(() => {
+      window.print();
+    }, 80);
+  }, []);
 
   const handleNavClick = (href: string) => {
     setActiveNav(href);
@@ -127,6 +142,14 @@ export default function Home() {
                 メール文案をコピー
               </button>
               <PrintButton />
+              <button
+                onClick={() => setShowPrintDialog(true)}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all hover:opacity-90"
+                style={{ background: '#10B98122', color: '#10B981', border: '1px solid #10B98140' }}
+              >
+                <Filter size={13} />
+                絞り込み印刷
+              </button>
             </div>
           </motion.div>
         </div>
@@ -182,12 +205,24 @@ export default function Home() {
         <EmailSection />
 
         {/* Print CTA */}
-        <div className="mt-12 p-4 rounded-xl border flex items-center justify-between gap-4" style={{ background: '#162236', borderColor: '#243650' }}>
-          <div>
-            <p className="text-sm font-semibold text-slate-300">訪問先でも活用できます</p>
-            <p className="text-xs text-slate-500 mt-0.5">印刷またはPDF保存して、顧客訪問・商品提案・フェア企画の資料としてご活用ください</p>
+        <div className="mt-12 p-4 rounded-xl border" style={{ background: '#162236', borderColor: '#243650' }}>
+          <div className="flex items-center justify-between gap-4 mb-3">
+            <div>
+              <p className="text-sm font-semibold text-slate-300">訪問先でも活用できます</p>
+              <p className="text-xs text-slate-500 mt-0.5">印刷またはPDF保存して、顧客訪問・商品提案・フェア企画の資料としてご活用ください</p>
+            </div>
           </div>
-          <PrintButton label="印刷 / PDF保存" />
+          <div className="flex flex-wrap gap-2">
+            <PrintButton label="全トレンドを印刷" />
+            <button
+              onClick={() => setShowPrintDialog(true)}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all hover:opacity-90"
+              style={{ background: '#10B98118', color: '#10B981', border: '1px solid #10B98140' }}
+            >
+              <Filter size={13} />
+              カテゴリを選んで印刷
+            </button>
+          </div>
         </div>
 
         {/* Footer */}
@@ -203,8 +238,23 @@ export default function Home() {
         </footer>
       </main>
 
-      {/* 印刷専用レイアウト（画面上は非表示、@media print で表示） */}
-      <PrintableReport />
+      {/* 印刷専用レイアウト — 全トレンド版（window.print()直接呼び出し時に使用） */}
+      {printCategories.length === 0 && <PrintableReport />}
+
+      {/* 印刷専用レイアウト — カテゴリフィルター版（絞り込み印刷時に使用） */}
+      {printCategories.length > 0 && (
+        <PrintableReportFiltered selectedCategories={printCategories} />
+      )}
+
+      {/* カテゴリ絞り込み印刷ダイアログ */}
+      <AnimatePresence>
+        {showPrintDialog && (
+          <PrintFilterDialog
+            onClose={() => setShowPrintDialog(false)}
+            onPrint={handleFilterPrint}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
