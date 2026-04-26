@@ -92,10 +92,11 @@ export default function ArchiveDetailPage() {
       <div className="min-h-screen flex items-center justify-center" style={{ background: '#0F1B2D' }}>
         <div className="text-center">
           <p className="text-slate-400 mb-4">該当する号が見つかりませんでした。</p>
-          <Link href="/archive">
-            <a className="text-amber-400 hover:text-amber-300 text-sm flex items-center gap-1.5 justify-center">
-              <ArrowLeft size={14} /> アーカイブ一覧へ戻る
-            </a>
+          <Link
+            href="/archive"
+            className="text-amber-400 hover:text-amber-300 text-sm flex items-center gap-1.5 justify-center"
+          >
+            <ArrowLeft size={14} /> アーカイブ一覧へ戻る
           </Link>
         </div>
       </div>
@@ -123,11 +124,12 @@ export default function ArchiveDetailPage() {
               週次トレンドレポート
             </span>
           </div>
-          <Link href="/archive">
-            <a className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-amber-400 transition-colors px-3 py-1.5 rounded-md hover:bg-amber-500/10">
-              <Archive size={13} />
-              バックナンバー一覧
-            </a>
+          <Link
+            href="/archive"
+            className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-amber-400 transition-colors px-3 py-1.5 rounded-md hover:bg-amber-500/10"
+          >
+            <Archive size={13} />
+            バックナンバー一覧
           </Link>
         </div>
       </nav>
@@ -145,13 +147,9 @@ export default function ArchiveDetailPage() {
           >
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-xs text-slate-500 mb-4">
-              <Link href="/">
-                <a className="hover:text-amber-400 transition-colors">最新号</a>
-              </Link>
+              <Link href="/" className="hover:text-amber-400 transition-colors">最新号</Link>
               <span>/</span>
-              <Link href="/archive">
-                <a className="hover:text-amber-400 transition-colors">バックナンバー</a>
-              </Link>
+              <Link href="/archive" className="hover:text-amber-400 transition-colors">バックナンバー</Link>
               <span>/</span>
               <span className="text-slate-400">{issue.weekLabel}</span>
             </div>
@@ -260,13 +258,12 @@ export default function ArchiveDetailPage() {
                 最新のトレンド情報・営業トーク例・メール文案はこちら
               </p>
             </div>
-            <Link href="/">
-              <a
-                className="shrink-0 flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg transition-colors"
-                style={{ background: '#F5A623', color: '#0F1B2D' }}
-              >
-                最新号へ <ExternalLink size={12} />
-              </a>
+            <Link
+              href="/"
+              className="shrink-0 flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg transition-colors"
+              style={{ background: '#F5A623', color: '#0F1B2D' }}
+            >
+              最新号へ <ExternalLink size={12} />
             </Link>
           </div>
         )}
@@ -274,29 +271,27 @@ export default function ArchiveDetailPage() {
         {/* Prev / Next Navigation */}
         <div className="grid grid-cols-2 gap-3 mt-6">
           {prevIssue ? (
-            <Link href={`/archive/${prevIssue.id}`}>
-              <a
-                className="p-3 rounded-xl border text-left transition-all hover:border-amber-500/30 hover:bg-amber-500/5"
-                style={{ background: '#1A2B42', borderColor: '#243650' }}
-              >
-                <p className="text-xs text-slate-500 mb-1">← 前の号</p>
-                <p className="text-sm font-semibold text-slate-300">{prevIssue.weekLabel}</p>
-                <p className="text-xs text-slate-600 mt-0.5">{prevIssue.issueNumber}</p>
-              </a>
+            <Link
+              href={`/archive/${prevIssue.id}`}
+              className="p-3 rounded-xl border text-left transition-all hover:border-amber-500/30 hover:bg-amber-500/5"
+              style={{ background: '#1A2B42', borderColor: '#243650' }}
+            >
+              <p className="text-xs text-slate-500 mb-1">← 前の号</p>
+              <p className="text-sm font-semibold text-slate-300">{prevIssue.weekLabel}</p>
+              <p className="text-xs text-slate-600 mt-0.5">{prevIssue.issueNumber}</p>
             </Link>
           ) : (
             <div />
           )}
           {nextIssue ? (
-            <Link href={`/archive/${nextIssue.id}`}>
-              <a
-                className="p-3 rounded-xl border text-right transition-all hover:border-amber-500/30 hover:bg-amber-500/5"
-                style={{ background: '#1A2B42', borderColor: '#243650' }}
-              >
-                <p className="text-xs text-slate-500 mb-1">次の号 →</p>
-                <p className="text-sm font-semibold text-slate-300">{nextIssue.weekLabel}</p>
-                <p className="text-xs text-slate-600 mt-0.5">{nextIssue.issueNumber}</p>
-              </a>
+            <Link
+              href={`/archive/${nextIssue.id}`}
+              className="p-3 rounded-xl border text-right transition-all hover:border-amber-500/30 hover:bg-amber-500/5"
+              style={{ background: '#1A2B42', borderColor: '#243650' }}
+            >
+              <p className="text-xs text-slate-500 mb-1">次の号 →</p>
+              <p className="text-sm font-semibold text-slate-300">{nextIssue.weekLabel}</p>
+              <p className="text-xs text-slate-600 mt-0.5">{nextIssue.issueNumber}</p>
             </Link>
           ) : (
             <div />

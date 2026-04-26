@@ -35,11 +35,12 @@ export default function ArchivePage() {
               週次トレンドレポート
             </span>
           </div>
-          <Link href="/">
-            <a className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-amber-400 transition-colors px-3 py-1.5 rounded-md hover:bg-amber-500/10">
-              <ArrowLeft size={13} />
-              最新号へ戻る
-            </a>
+          <Link
+            href="/"
+            className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-amber-400 transition-colors px-3 py-1.5 rounded-md hover:bg-amber-500/10"
+          >
+            <ArrowLeft size={13} />
+            最新号へ戻る
           </Link>
         </div>
       </nav>
@@ -95,15 +96,15 @@ export default function ArchivePage() {
               onMouseEnter={() => setHoveredId(issue.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <Link href={`/archive/${issue.id}`}>
-                <a
-                  className="block rounded-xl border overflow-hidden transition-all duration-200"
-                  style={{
-                    borderColor: hoveredId === issue.id ? '#F5A62340' : '#243650',
-                    background: hoveredId === issue.id ? '#1E3050' : '#1A2B42',
-                    boxShadow: hoveredId === issue.id ? '0 4px 24px rgba(245,166,35,0.08)' : 'none',
-                  }}
-                >
+              <Link
+                href={`/archive/${issue.id}`}
+                className="block rounded-xl border overflow-hidden transition-all duration-200"
+                style={{
+                  borderColor: hoveredId === issue.id ? '#F5A62340' : '#243650',
+                  background: hoveredId === issue.id ? '#1E3050' : '#1A2B42',
+                  boxShadow: hoveredId === issue.id ? '0 4px 24px rgba(245,166,35,0.08)' : 'none',
+                }}
+              >
                   <div className="p-5">
                     {/* Header Row */}
                     <div className="flex items-start justify-between gap-4 mb-4">
@@ -196,7 +197,6 @@ export default function ArchivePage() {
                       ))}
                     </div>
                   </div>
-                </a>
               </Link>
             </motion.div>
           ))}
