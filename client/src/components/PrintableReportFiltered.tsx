@@ -4,6 +4,7 @@
 // @media print で表示。画面上は非表示。
 
 import { trends, emailContent, scoreLabels } from '@/lib/trendData';
+import { getLatestIssue } from '@/lib/archiveData';
 
 interface PrintableReportFilteredProps {
   selectedCategories: string[];
@@ -31,6 +32,7 @@ function ScoreRow({ label, value }: { label: string; value: number }) {
 }
 
 export default function PrintableReportFiltered({ selectedCategories }: PrintableReportFilteredProps) {
+  const latestIssue = getLatestIssue();
   const today = new Date().toLocaleDateString('ja-JP', {
     year: 'numeric', month: 'long', day: 'numeric',
   });
@@ -50,10 +52,10 @@ export default function PrintableReportFiltered({ selectedCategories }: Printabl
         <div className="print-header-left">
           <p className="print-label">社内配布資料 — 営業企画部</p>
           <h1 className="print-title">食品・スイーツ・パン・カフェ<br />週次トレンドレポート</h1>
-          <p className="print-subtitle">2026年4月第4週号（Vol.04）</p>
+          <p className="print-subtitle">{latestIssue.weekLabel}号（{latestIssue.issueNumber}）</p>
         </div>
         <div className="print-header-right">
-          <p className="print-meta">発行日：2026年4月24日</p>
+          <p className="print-meta">発行日：{latestIssue.publishedAt}</p>
           <p className="print-meta">印刷日：{today}</p>
           <p className="print-meta">対象：{categoryLabel}</p>
           <p className="print-meta">用途：顧客訪問・商品提案・フェア企画</p>

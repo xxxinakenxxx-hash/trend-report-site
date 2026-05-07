@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 import { TrendingUp, ChevronRight, Archive, Filter } from 'lucide-react';
 import { trends } from '@/lib/trendData';
+import { getLatestIssue } from '@/lib/archiveData';
 import TrendCard from '@/components/TrendCard';
 import ScoreMatrix from '@/components/ScoreMatrix';
 import EmailSection from '@/components/EmailSection';
@@ -25,6 +26,7 @@ const NAV_ITEMS = [
 ];
 
 export default function Home() {
+  const latestIssue = getLatestIssue();
   const [activeNav, setActiveNav] = useState('');
   const [showPrintDialog, setShowPrintDialog] = useState(false);
   const [printCategories, setPrintCategories] = useState<string[]>([]);
@@ -85,7 +87,7 @@ export default function Home() {
               <Archive size={13} />
               バックナンバー
             </Link>
-            <span className="text-xs text-slate-600 hidden sm:block">2026年4月第4週号</span>
+            <span className="text-xs text-slate-600 hidden sm:block">{latestIssue.weekLabel}号</span>
           </div>
         </div>
       </nav>
@@ -109,7 +111,7 @@ export default function Home() {
               <span className="text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30">
                 営業企画部 発行
               </span>
-              <span className="text-xs text-slate-500">2026年4月24日</span>
+              <span className="text-xs text-slate-500">{latestIssue.publishedAt}</span>
             </div>
 
             {/* Title */}
