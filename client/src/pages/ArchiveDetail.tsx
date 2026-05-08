@@ -308,8 +308,8 @@ export default function ArchiveDetailPage() {
               <div>
                 <div className="flex items-center gap-2 flex-wrap">
                   <h1
-                    className="text-2xl sm:text-3xl font-black text-white"
-                    style={{ fontFamily: 'Syne, Noto Sans JP, sans-serif' }}
+                    className="text-2xl sm:text-3xl font-bold text-white"
+                    style={{ fontFamily: 'Noto Sans JP, sans-serif' }}
                   >
                     {issue.weekLabel}
                   </h1>
