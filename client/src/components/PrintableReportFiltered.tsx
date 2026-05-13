@@ -81,8 +81,8 @@ export default function PrintableReportFiltered({ selectedCategories }: Printabl
       <div className="print-tip-box">
         <span className="print-tip-label">💡 今週の営業で使える一言</span>
         <p className="print-tip-text">
-          「今年のスイーツは『味』だけでなく、『バリむに』や『とろ生』といった
-          <strong>複雑な食感（オノマトペ）</strong>をどう作るかが、SNSでバズる最大のポイントです！」
+          「今週は国産メロン・チョコミント・宇治抹茶氷を軸に、
+          <strong>果実感・冷感・食感</strong>を組み合わせた初夏フェア提案が有効です」
         </p>
       </div>
 

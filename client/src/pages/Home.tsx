@@ -170,8 +170,8 @@ export default function Home() {
           <p className="text-sm text-center">
             <span className="text-amber-400 font-bold mr-2">💡 今週の営業で使える一言</span>
             <span className="text-slate-300">
-              「今年のスイーツは『味』だけでなく、『バリむに』や『とろ生』といった
-              <strong className="text-white">複雑な食感（オノマトペ）</strong>をどう作るかが、SNSでバズる最大のポイントです！」
+              「今週は国産メロン・チョコミント・宇治抹茶氷を軸に、
+              <strong className="text-white">果実感・冷感・食感</strong>を組み合わせた初夏フェア提案が有効です」
             </span>
           </p>
         </div>
