@@ -1,0 +1,118 @@
+{
+  "period": {
+    "label": "2026年5月第5週",
+    "start_date": "2026-05-25",
+    "end_date": "2026-05-31",
+    "generated_at_utc": "2026-05-27"
+  },
+  "scoring_method": {
+    "scale": "各軸1〜5点、合計25点満点",
+    "axes": [
+      { "key": "freshness", "name": "新規性", "description": "対象週に発売・更新された情報か、既存カテゴリに対する新しい切り口があるか" },
+      { "key": "seasonality", "name": "季節性", "description": "初夏・梅雨前・暑熱・行楽需要との接続が明確か" },
+      { "key": "spreadability", "name": "拡散性", "description": "SNSや店頭で話題化しやすい見た目、名称、限定性、参加性があるか" },
+      { "key": "commerciality", "name": "商用展開性", "description": "食品・小売・外食の販促企画へ転用しやすいか" },
+      { "key": "evidence", "name": "根拠強度", "description": "複数企業または大手企業の公開情報で確認できるか" }
+    ]
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "theme": "白桃・ピーチティー／果肉ジェリーソーダ",
+      "score": { "freshness": 5, "seasonality": 5, "spreadability": 5, "commerciality": 5, "evidence": 5, "total": 25 },
+      "reason": "モスバーガー＆カフェ、Cafe Kitsune、クリスピー・クリーム・ドーナツで白桃、ピーチソーダ、ジェリー入り炭酸が同時期に展開され、初夏ドリンクとして横展開しやすい。",
+      "sources": ["https://entabe.jp/amp/60380/2026-may-cefe-menu-news"]
+    },
+    {
+      "rank": 2,
+      "theme": "バナナ×コーヒー／アフォガート系フラペチーノ",
+      "score": { "freshness": 5, "seasonality": 4, "spreadability": 5, "commerciality": 5, "evidence": 5, "total": 24 },
+      "reason": "スターバックスが5月27日から『もったいないバナナ』を使用したバナナ アフォガート フラペチーノを全国展開。フードロス文脈、バナナの親しみやすさ、コーヒーの大人向け要素を併せ持つ。",
+      "sources": ["https://rurubu.jp/andmore/article/16584"]
+    },
+    {
+      "rank": 3,
+      "theme": "ふわもち・もち食感コンビニスイーツ",
+      "score": { "freshness": 5, "seasonality": 4, "spreadability": 5, "commerciality": 5, "evidence": 5, "total": 24 },
+      "reason": "セブン-イレブンのふわもち系新作、ローソンの森半抹茶もち食感ロール、横断記事での火曜スイーツ更新が重なり、食感訴求の強さが明確。",
+      "sources": ["https://entabe.jp/60362/summary-seveneleven-may-26th-new-sweet", "https://tokusengai.com/_ct/17710845", "https://tokubai.co.jp/news/articles/3895"]
+    },
+    {
+      "rank": 4,
+      "theme": "初夏メロン冷菓・メロンデザート",
+      "score": { "freshness": 5, "seasonality": 5, "spreadability": 4, "commerciality": 5, "evidence": 4, "total": 23 },
+      "reason": "ローソンの赤肉メロン果汁果肉入りメロンフラッペ、セブンのクインシーメロン杏仁豆腐、ファミリーレストランのメロンデザートが並び、初夏の果物訴求として強い。",
+      "sources": ["https://tokusengai.com/_ct/17710845", "https://entabe.jp/amp/60354/seven-eleven-200kcal-sweets-20260526", "https://entabe.jp/60255/summary-family-restaurant-2026-may-new-sweets"]
+    },
+    {
+      "rank": 5,
+      "theme": "ゴロチョコ・塊感チョコパン",
+      "score": { "freshness": 5, "seasonality": 3, "spreadability": 4, "commerciality": 5, "evidence": 5, "total": 22 },
+      "reason": "ローソンのゴロチョコ！メロンパン／フランスパン、ファミリーマートのどかっとパン・オ・ショコラが同週に確認され、具材の存在感を前面に出すパン企画として汎用性がある。",
+      "sources": ["https://tokusengai.com/_ct/17710845", "https://news.mynavi.jp/article/20260525-4499130/"]
+    },
+    {
+      "rank": 6,
+      "theme": "甘じょっぱい塩チョコアイス",
+      "score": { "freshness": 5, "seasonality": 4, "spreadability": 4, "commerciality": 4, "evidence": 4, "total": 21 },
+      "reason": "ファミリーマート限定・数量限定の『たべる牧場 塩チョコ』が確認され、暑熱期の塩味とチョコの組み合わせに販促上の説明力がある。",
+      "sources": ["https://news.mynavi.jp/article/20260525-4499130/"]
+    },
+    {
+      "rank": 7,
+      "theme": "200kcal以下スイーツ／軽量デザート",
+      "score": { "freshness": 5, "seasonality": 4, "spreadability": 3, "commerciality": 4, "evidence": 4, "total": 20 },
+      "reason": "セブン-イレブンの低カロリー系スイーツが複数確認され、暑い季節の軽い甘味需要に合うが、情緒的な話題性は上位候補より弱い。",
+      "sources": ["https://entabe.jp/amp/60354/seven-eleven-200kcal-sweets-20260526"]
+    },
+    {
+      "rank": 8,
+      "theme": "500kcal以下の冷製パスタ・冷たい麺",
+      "score": { "freshness": 5, "seasonality": 5, "spreadability": 3, "commerciality": 4, "evidence": 3, "total": 20 },
+      "reason": "セブン-イレブンで冷製パスタ、冷たい鯛塩ラーメン、ラーメンサラダが確認され、初夏の主食提案として妥当。ただしスイーツ系より拡散性は限定的。",
+      "sources": ["https://entabe.jp/amp/60386/seven-eleven-500kcal-pasta-ramen-20260526"]
+    },
+    {
+      "rank": 9,
+      "theme": "抹茶×もち・老舗茶舗コラボ",
+      "score": { "freshness": 5, "seasonality": 3, "spreadability": 4, "commerciality": 4, "evidence": 4, "total": 20 },
+      "reason": "ローソンの森半抹茶もち食感ロール、ファミリーマートの宇治抹茶クリームロールが同週に確認されるが、抹茶そのものの季節的ピークは春寄りで新規性は食感側に依存する。",
+      "sources": ["https://tokusengai.com/_ct/17710845", "https://news.mynavi.jp/article/20260525-4499130/"]
+    },
+    {
+      "rank": 10,
+      "theme": "チョコミント／ミントチョコの再加速",
+      "score": { "freshness": 4, "seasonality": 5, "spreadability": 4, "commerciality": 4, "evidence": 3, "total": 20 },
+      "reason": "ファミリーレストランのチョコミン党フェア、菓子領域のミントチョコ新商品が確認され、夏前の定番テーマとして堅い。一方、対象週での新規集中度は上位より低い。",
+      "sources": ["https://entabe.jp/60255/summary-family-restaurant-2026-may-new-sweets", "https://mognavi.jp/news/matome/gen-newProduct-20936/"]
+    },
+    {
+      "rank": 11,
+      "theme": "ミルクワッフルコーンの上だけ／分解型定番アイス",
+      "score": { "freshness": 5, "seasonality": 4, "spreadability": 4, "commerciality": 3, "evidence": 3, "total": 19 },
+      "reason": "ワッフルコーンからアイス部分だけを切り出す逆張り企画で話題性はあるが、確認できた展開は単品中心。",
+      "sources": ["https://tokusengai.com/_ct/17710845"]
+    },
+    {
+      "rank": 12,
+      "theme": "ポッピングシャワー風味チョコ",
+      "score": { "freshness": 4, "seasonality": 4, "spreadability": 4, "commerciality": 3, "evidence": 3, "total": 18 },
+      "reason": "不二家×サーティワンの限定チョコとして食感再現の面白さはあるが、限定流通色が強く横展開性は中程度。",
+      "sources": ["https://mognavi.jp/news/matome/gen-newProduct-20936/"]
+    },
+    {
+      "rank": 13,
+      "theme": "トロピカル・南国系チョコ",
+      "score": { "freshness": 4, "seasonality": 4, "spreadability": 3, "commerciality": 3, "evidence": 3, "total": 17 },
+      "reason": "ハワイアンサンダーなど季節感のある菓子は確認できるが、対象週での複数カテゴリ波及は限定的。",
+      "sources": ["https://mognavi.jp/news/matome/gen-newProduct-20936/"]
+    }
+  ],
+  "selected_top5": [
+    "白桃・ピーチティー／果肉ジェリーソーダ",
+    "バナナ×コーヒー／アフォガート系フラペチーノ",
+    "ふわもち・もち食感コンビニスイーツ",
+    "初夏メロン冷菓・メロンデザート",
+    "ゴロチョコ・塊感チョコパン"
+  ]
+}
