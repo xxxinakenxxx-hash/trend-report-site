@@ -81,8 +81,8 @@ export default function PrintableReportFiltered({ selectedCategories }: Printabl
       <div className="print-tip-box">
         <span className="print-tip-label">💡 今週の営業で使える一言</span>
         <p className="print-tip-text">
-          「今週は国産メロン・チョコミント・宇治抹茶氷を軸に、
-          <strong>果実感・冷感・食感</strong>を組み合わせた初夏フェア提案が有効です」
+          「今週は、塩バターでパンに初夏の塩気を足し、
+          <strong>メロンとレモンで冷感・爽やかさ</strong>を作る提案が有効です」
         </p>
       </div>
 
