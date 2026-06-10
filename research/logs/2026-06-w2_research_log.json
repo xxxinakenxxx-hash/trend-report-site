@@ -1,0 +1,394 @@
+{
+  "period": {
+    "id": "2026-06-w2",
+    "label": "2026年6月第2週",
+    "start_date": "2026-06-08",
+    "end_date": "2026-06-14",
+    "published_at": "2026-06-10",
+    "generated_at_utc": "2026-06-10T00:12:08.022099+00:00"
+  },
+  "role_context": "製菓製パン・外食カフェ向け業務用卸の営業企画担当",
+  "research_scope": {
+    "sources": [
+      "飲食メディアの記事",
+      "コンビニ・外食チェーン・カフェチェーンの新商品情報",
+      "食品メーカーの新商品情報",
+      "レシピサイトの人気テーマ",
+      "公開SNS上で確認できる食品関連の話題"
+    ],
+    "priority_period": "直近1か月以内",
+    "rules": [
+      "複数媒体で確認できるテーマを優先",
+      "古い情報を今週のトレンドとして扱わない",
+      "SNSだけを根拠に断定しない",
+      "根拠URLを必ず記載",
+      "健康効果・医療効果・機能性は断定しない"
+    ]
+  },
+  "search_queries": [
+    "2026年6月 新商品 スイーツ パン カフェ",
+    "2026年6月 コンビニ 新商品 冷凍 スイーツ",
+    "June 2026 Japan food trend bakery cafe sweets",
+    "2026年6月 アサイー 新商品 カフェ スイーツ",
+    "2026年6月 チョコミント 新商品 カフェ スイーツ",
+    "June 2026 Japan acai mint sweets cafe"
+  ],
+  "source_catalog": [
+    {
+      "title": "ローソン公式 — 超ハッピーすぎ！チャレンジ",
+      "url": "https://www.lawson.co.jp/lab/tsuushin/art/1527859_4659.html",
+      "publisher": "ローソン",
+      "date": "2026-06-09",
+      "type": "official"
+    },
+    {
+      "title": "ファミリーマート公式 — 巨大オールスター祭",
+      "url": "https://www.family.co.jp/company/news_releases/2026/20260602_01.html",
+      "publisher": "ファミリーマート",
+      "date": "2026-06-02",
+      "type": "official"
+    },
+    {
+      "title": "ローソン公式 — 夏にぴったりの氷菓やアイスなど計14品発売",
+      "url": "https://www.lawson.co.jp/company/news/detail/1528217_2504.html",
+      "publisher": "ローソン",
+      "date": "2026-05-21",
+      "type": "official"
+    },
+    {
+      "title": "PR TIMES — 513BAKERY 世界のパンフェア第2弾",
+      "url": "https://prtimes.jp/main/html/rd/p/000000093.000059196.html",
+      "publisher": "PR TIMES / 513BAKERY",
+      "date": "2026-05-27",
+      "type": "press_release"
+    },
+    {
+      "title": "マイナビニュース — ファミリーマート 2026年6月新作",
+      "url": "https://news.mynavi.jp/article/20260601-4529195/",
+      "publisher": "マイナビニュース",
+      "date": "2026-06-01",
+      "type": "media"
+    },
+    {
+      "title": "えん食べ — コンビニ新作スイーツ 2026年6月",
+      "url": "https://entabe.jp/60489/seven-eleven-familymart-lawson-new-sweets-june-2026",
+      "publisher": "えん食べ",
+      "date": "2026-06",
+      "type": "media"
+    },
+    {
+      "title": "えん食べ — セブン-イレブン2026年6月新商品",
+      "url": "https://entabe.jp/60545/2026-june-seven-eleven-new-items-summer",
+      "publisher": "えん食べ",
+      "date": "2026-06",
+      "type": "media"
+    },
+    {
+      "title": "PR TIMES — アサイー関連公開情報",
+      "url": "https://prtimes.jp/main/html/rd/p/000000244.000024416.html",
+      "publisher": "PR TIMES",
+      "date": "2026-06",
+      "type": "press_release"
+    },
+    {
+      "title": "ファミリーマート公式 — 塩バターパン関連リリース",
+      "url": "https://www.family.co.jp/company/news_releases/2026/20260529_010.html",
+      "publisher": "ファミリーマート",
+      "date": "2026-05-29",
+      "type": "official"
+    }
+  ],
+  "scoring_method": {
+    "scale": "各軸1〜5点、合計25点満点",
+    "axes": [
+      {
+        "key": "buzz",
+        "name": "話題性",
+        "description": "名称、見た目、限定性、企業施策として話題化しやすいか"
+      },
+      {
+        "key": "consumer_interest",
+        "name": "検索需要・消費者関心",
+        "description": "消費者が探しやすい定番語・季節語・関心語と接続するか"
+      },
+      {
+        "key": "media_exposure",
+        "name": "メディア露出",
+        "description": "公式情報、飲食メディア、複数企業情報で確認できるか"
+      },
+      {
+        "key": "b2b_fit",
+        "name": "業務用提案への接続性",
+        "description": "業務用原料、包材、半製品、外食メニュー提案に接続できるか"
+      },
+      {
+        "key": "continuity",
+        "name": "継続可能性",
+        "description": "一過性の話題ではなく、季節フェアや定番派生として継続できるか"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "theme": "大容量・増量コンビニスイーツ／カフェLLサイズ",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 5
+      },
+      "reason": "ローソンが51周年施策としてプレミアムロールケーキ、バスチー、チョコシュー、どらもっち等の増量品を週替わり展開し、ファミリーマートも巨大オールスター祭でコーヒーLL、でかいコーヒーゼリー、エクレア、フィナンシェ、たべる牧場ミルクLLを同時展開している。価格高騰下の満足感訴求として複数大手で確認でき、菓子・カフェ・ベーカリーに転用しやすい。",
+      "sources": [
+        "https://www.lawson.co.jp/lab/tsuushin/art/1527859_4659.html",
+        "https://www.family.co.jp/company/news_releases/2026/20260602_01.html"
+      ],
+      "total": 25
+    },
+    {
+      "rank": 2,
+      "theme": "果肉氷菓・冷凍フルーツの夏メニュー化",
+      "category": "冷凍食品・冷凍スイーツ",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "ローソンが果実価格高騰を背景に、果汁・果肉30%以上の氷菓、冷凍マンゴースティック、MOTTAINAIチョコバナナ、しろくま系氷菓を発表。果物の代替・補完として、冷凍フルーツ、氷菓、パフェ、ドリンクへ展開できる。",
+      "sources": [
+        "https://www.lawson.co.jp/company/news/detail/1528217_2504.html",
+        "https://entabe.jp/60489/seven-eleven-familymart-lawson-new-sweets-june-2026"
+      ],
+      "total": 24
+    },
+    {
+      "rank": 3,
+      "theme": "世界のパン・クロッチ・冷やしパンのフェア化",
+      "category": "パン・ベーカリー",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 4,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "513BAKERYが世界のパンフェア第2弾で、アサイーボウルデニッシュ、ケバブチキンサンド、パンデデウス、きな粉クロッチ、冷やしクリームパンなどを展開。単品ではなくフェアとして売場化できる点が営業提案に向く。",
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000093.000059196.html",
+        "https://news.mynavi.jp/article/20260601-4529195/"
+      ],
+      "total": 23
+    },
+    {
+      "rank": 4,
+      "theme": "アサイーボウル系デニッシュ・高付加価値ヘルシー素材",
+      "category": "健康志向・高付加価値食品",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 5,
+        "メディア露出": 4,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "513BAKERYのアサイーボウルデニッシュは、アサイー、ベリー、グラノーラをデニッシュに落とし込んだ商品。健康効果は断定せず、色味、果実感、高付加価値素材として提案するのが適切。",
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000093.000059196.html",
+        "https://prtimes.jp/main/html/rd/p/000000244.000024416.html"
+      ],
+      "total": 22
+    },
+    {
+      "rank": 5,
+      "theme": "レモン塩・はちみつレモンの初夏酸味提案",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "ローソンの酸っぱすぎ塩レモネード、513BAKERYの冷やしクリームパン（ハチミツレモン）により、酸味、塩味、冷感を同時に訴求できる。パン、ドリンク、ゼリー、焼菓子に横展開しやすい。",
+      "sources": [
+        "https://www.lawson.co.jp/lab/tsuushin/art/1527859_4659.html",
+        "https://prtimes.jp/main/html/rd/p/000000093.000059196.html"
+      ],
+      "total": 22
+    },
+    {
+      "rank": 6,
+      "theme": "バスク風チーズケーキ・濃厚チーズ系の再訴求",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 5,
+        "メディア露出": 4,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "ローソンの盛りすぎバスチー、ふわ濃チーズケーキなど、定番チーズ系スイーツを増量・濃厚化する動きが確認できる。冷蔵ケーキ、カフェデザート、焼菓子に使いやすい。",
+      "sources": [
+        "https://www.lawson.co.jp/lab/tsuushin/art/1527859_4659.html",
+        "https://entabe.jp/60489/seven-eleven-familymart-lawson-new-sweets-june-2026"
+      ],
+      "total": 22
+    },
+    {
+      "rank": 7,
+      "theme": "コーヒーゼリー・カフェLLサイズのカフェデザート化",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 5,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "ファミリーマートがFAMIMA CAFÉのLLサイズを定番化し、でかいコーヒーゼリーも同時発売。飲料とデザートを同じコーヒー原料で展開できるため、カフェ向け提案に接続しやすい。",
+      "sources": [
+        "https://www.family.co.jp/company/news_releases/2026/20260602_01.html",
+        "https://news.mynavi.jp/article/20260601-4529195/"
+      ],
+      "total": 21
+    },
+    {
+      "rank": 8,
+      "theme": "チョコミント・清涼チョコアイスの夏前倒し",
+      "category": "冷凍食品・冷凍スイーツ",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 5,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "ローソンのチョコミントワッフルコーン、クールチョコミントなど、夏の定番フレーバーが公開情報で確認できる。ミント、チョコチップ、ワッフル、パフェに展開できる。",
+      "sources": [
+        "https://www.lawson.co.jp/company/news/detail/1528217_2504.html",
+        "https://entabe.jp/60489/seven-eleven-familymart-lawson-new-sweets-june-2026"
+      ],
+      "total": 21
+    },
+    {
+      "rank": 9,
+      "theme": "マンゴー・白くま・南国フルーツ氷菓",
+      "category": "冷凍食品・冷凍スイーツ",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "完熟生マンゴースティック、フルーツ盛りだくさん白くまバー、とろける練乳のしろくまなどが確認でき、暑熱期の果実・練乳・氷の組み合わせとして堅い。",
+      "sources": [
+        "https://www.lawson.co.jp/company/news/detail/1528217_2504.html",
+        "https://entabe.jp/60545/2026-june-seven-eleven-new-items-summer"
+      ],
+      "total": 20
+    },
+    {
+      "rank": 10,
+      "theme": "和素材冷感スイーツ（ぜんざい・わらび餅・どらもっち）",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "ローソンの飲む冷やしぜんざい、盛りすぎどらもっち、513BAKERYのわらび餅あんクロワッサンが確認できる。和素材を冷感・もち食感・クロワッサンに組み込む切り口がある。",
+      "sources": [
+        "https://www.lawson.co.jp/lab/tsuushin/art/1527859_4659.html",
+        "https://prtimes.jp/main/html/rd/p/000000093.000059196.html"
+      ],
+      "total": 20
+    },
+    {
+      "rank": 11,
+      "theme": "塩バター・甘じょっぱい菓子パンの継続",
+      "category": "パン・ベーカリー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "ファミリーマートの塩バターパン系新商品に加え、初夏の塩気需要と甘じょっぱい味づくりはベーカリーで使いやすい。前週から継続するため鮮度は上位より低いが、実需は残る。",
+      "sources": [
+        "https://www.family.co.jp/company/news_releases/2026/20260529_010.html",
+        "https://news.mynavi.jp/article/20260601-4529195/"
+      ],
+      "total": 21
+    },
+    {
+      "rank": 12,
+      "theme": "軽量・食べ切り冷蔵スイーツ",
+      "category": "健康志向・高付加価値食品",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 5
+      },
+      "reason": "セブン-イレブンの200kcal以下スイーツ関連記事などから、軽い食後デザートの需要は継続している。ただし健康効果・ダイエット効果としては断定せず、小容量・食べ切りの価値で扱う。",
+      "sources": [
+        "https://entabe.jp/amp/60459/seven-eleven-200kcal-sweets-20260602",
+        "https://entabe.jp/60489/seven-eleven-familymart-lawson-new-sweets-june-2026"
+      ],
+      "total": 20
+    },
+    {
+      "rank": 13,
+      "theme": "メロン冷感ドリンク・果肉ゼリーの継続",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "6月第1週から続くメロン冷感ドリンク・果肉ゼリー系は、初夏のカフェ提案として継続性がある。一方、今週固有の新規集中度は大容量・冷凍果実系より弱い。",
+      "sources": [
+        "https://entabe.jp/60489/seven-eleven-familymart-lawson-new-sweets-june-2026",
+        "https://prtimes.jp/main/html/rd/p/000000144.000069940.html"
+      ],
+      "total": 19
+    }
+  ],
+  "selected_top5": [
+    "大容量・増量コンビニスイーツ／カフェLLサイズ",
+    "果肉氷菓・冷凍フルーツの夏メニュー化",
+    "世界のパン・クロッチ・冷やしパンのフェア化",
+    "アサイーボウル系デニッシュ・高付加価値ヘルシー素材",
+    "レモン塩・はちみつレモンの初夏酸味提案"
+  ],
+  "site_update": {
+    "trendData.ts": {
+      "weekLabel": "2026年6月第2週",
+      "publishedAt": "2026-06-10",
+      "top1": "大容量・増量コンビニスイーツ／カフェLLサイズ"
+    },
+    "archiveData.ts": {
+      "new_issue_id": "2026-06-w2",
+      "issueNumber": "Vol.11",
+      "previous_latest_expected": "2026-06-w1"
+    },
+    "email_update": {
+      "subject": "【営業企画部より】今週の食品・外食トレンドTOP3と提案の切り口（6/10号）",
+      "top3": [
+        "大容量・増量コンビニスイーツ／カフェLLサイズ",
+        "果肉氷菓・冷凍フルーツの夏メニュー化",
+        "世界のパン・クロッチ・冷やしパンのフェア化"
+      ]
+    }
+  }
+}
