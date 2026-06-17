@@ -1,0 +1,427 @@
+{
+  "period": {
+    "id": "2026-06-w3",
+    "label": "2026年6月第3週",
+    "start_date": "2026-06-15",
+    "end_date": "2026-06-21",
+    "published_at": "2026-06-17",
+    "generated_at_utc": "2026-06-17T00:00:00.000000+00:00"
+  },
+  "role_context": "製菓製パン・外食カフェ向け業務用卸の営業企画担当",
+  "research_scope": {
+    "sources": [
+      "飲食メディアの記事",
+      "コンビニ・外食チェーン・カフェチェーンの新商品情報",
+      "食品メーカーの新商品情報",
+      "レシピサイトの人気テーマ",
+      "公開SNS上で確認できる食品関連の話題"
+    ],
+    "priority_period": "直近1か月以内",
+    "rules": [
+      "複数媒体で確認できるテーマを優先",
+      "古い情報を今週のトレンドとして扱わない",
+      "SNSだけを根拠に断定しない",
+      "根拠URLを必ず記載",
+      "健康効果・医療効果・機能性は断定しない"
+    ]
+  },
+  "search_queries": [
+    "2026年6月 クロッチ クロワッサン 餅 パン トレンド",
+    "2026年6月 韓国パン チディミパン 新発売 ベーカリー",
+    "2026年6月 冷凍スイーツ 新商品 冷凍ドーナツ",
+    "2026年6月 プロテイン スイーツ パン 機能性 新発売",
+    "2026年6月 アールグレイ スイーツ カヌレ コンビニ トレンド",
+    "2026年6月 紅茶 スイーツ パン コラボ 新発売",
+    "2026年6月 タリーズ スタバ ドトール 夏 新商品 フローズン",
+    "2026年6月 カフェ 夏 フローズンドリンク ピーチ マンゴー 新発売",
+    "2026年6月 レモン スイーツ ティラミス ケーキ パンケーキ",
+    "2026年6月 マンゴー スイーツ ジェラート ピケ カフェ",
+    "2026年6月 ミスド もっちゅりん 生ドーナツ 不二家 新発売",
+    "2026年6月 かき氷 新商品 ジョナサン パブロ カフェ"
+  ],
+  "source_catalog": [
+    {
+      "title": "セブンイレブン — 餅っと食感クロッチ チョコ・黒蜜きなこ 新発売",
+      "url": "https://article.yahoo.co.jp/detail/773ca7e2c0b9e879e93d015bd390d639db220ef9",
+      "publisher": "Yahoo!ニュース（えん食べ）",
+      "date": "2026-06-11",
+      "type": "media"
+    },
+    {
+      "title": "PR TIMES — クロッチ ショコラ・抹茶 新登場（韓国発第3の進化系パン）",
+      "url": "https://prtimes.jp/main/html/rd/p/000000062.000075032.html",
+      "publisher": "PR TIMES",
+      "date": "2026-06-12",
+      "type": "press_release"
+    },
+    {
+      "title": "reitaku.online — 2026年注目の韓国スイーツ「クロッチ」とは何？",
+      "url": "https://reitaku.online/contents/contents_point/30445/",
+      "publisher": "reitaku.online",
+      "date": "2026-06-03",
+      "type": "media"
+    },
+    {
+      "title": "shingekifood.com — セブンイレブン「餅っと食感クロッチ」6月9日発売",
+      "url": "https://shingekifood.com/entry/2026/06/02/064400",
+      "publisher": "shingekifood.com",
+      "date": "2026-06-02",
+      "type": "media"
+    },
+    {
+      "title": "マイナビニュース — ファミリーマート2026年6月新作スイーツ5選（Afternoon Tea監修）",
+      "url": "https://news.mynavi.jp/article/20260615-4583829/",
+      "publisher": "マイナビニュース",
+      "date": "2026-06-15",
+      "type": "media"
+    },
+    {
+      "title": "mdpr.jp — ファミマ×Afternoon Tea コラボ過去最多28品同時展開",
+      "url": "https://mdpr.jp/gourmet/detail/4796402",
+      "publisher": "モデルプレス",
+      "date": "2026-06-11",
+      "type": "media"
+    },
+    {
+      "title": "infoseek — Afternoon Tea監修、過去最多の全28種類を同時展開",
+      "url": "https://news.infoseek.co.jp/article/prtimes_000002352_000046210/",
+      "publisher": "infoseek（PR TIMES）",
+      "date": "2026-06-11",
+      "type": "press_release"
+    },
+    {
+      "title": "rurubu.jp — ファミマ新商品 Afternoon Tea監修の紅茶が香るスイーツ",
+      "url": "https://rurubu.jp/andmore/article/24911",
+      "publisher": "るるぶ",
+      "date": "2026-06-11",
+      "type": "media"
+    },
+    {
+      "title": "えん食べ — 2026年6月発売 カフェチェーン ドリンク新商品まとめ",
+      "url": "https://entabe.jp/60615/summary-2026-june-cafechain-release-new-drinks",
+      "publisher": "えん食べ",
+      "date": "2026-06-14",
+      "type": "media"
+    },
+    {
+      "title": "いこーよニュース — 2026年初夏 フローズンドリンク新作まとめ",
+      "url": "https://report.iko-yo.net/articles/31279",
+      "publisher": "いこーよ",
+      "date": "2026-06-11",
+      "type": "media"
+    },
+    {
+      "title": "ファッションプレス — タリーズコーヒー夏ドリンク「とろっとピーチシェイク」",
+      "url": "https://www.fashion-press.net/news/147078",
+      "publisher": "ファッションプレス",
+      "date": "2026-06-04",
+      "type": "media"
+    },
+    {
+      "title": "PR TIMES — ドトールコーヒーショップ 6月25日より夏の新商品各種発売",
+      "url": "https://prtimes.jp/main/html/rd/p/000000565.000008784.html",
+      "publisher": "PR TIMES（ドトール）",
+      "date": "2026-06-11",
+      "type": "press_release"
+    },
+    {
+      "title": "えん食べ — 2026年6月発売 レモンスイーツ新商品まとめ第3弾",
+      "url": "https://entabe.jp/60629/summary-2026-june-release-new-lemon-sweets-3rd",
+      "publisher": "えん食べ",
+      "date": "2026-06-14",
+      "type": "media"
+    },
+    {
+      "title": "えん食べ — 2026年6月発売 マンゴースイーツ新商品まとめ",
+      "url": "https://entabe.jp/60639/summary-2026-june-release-mango-sweets",
+      "publisher": "えん食べ",
+      "date": "2026-06-15",
+      "type": "media"
+    },
+    {
+      "title": "えん食べ — 2026年6月発売 ドーナツ新商品まとめ（ミスド・丸亀・KKD等）",
+      "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60596",
+      "publisher": "えん食べ（dメニュー）",
+      "date": "2026-06-14",
+      "type": "media"
+    },
+    {
+      "title": "Yahoo!ニュース — 洋菓子屋さんが作る「不二家の生ドーナツ」3種類全国発売",
+      "url": "https://article.yahoo.co.jp/detail/1e60f0f7883cb78f73985831458bf5e4b4220cce",
+      "publisher": "Yahoo!ニュース",
+      "date": "2026-05-27",
+      "type": "media"
+    },
+    {
+      "title": "LEE — ミスドで再登場の「もっちゅりん」買ってみた",
+      "url": "https://lee.hpplus.jp/column/3627563/",
+      "publisher": "LEE",
+      "date": "2026-06-09",
+      "type": "media"
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "theme": "クロッチ（クロワッサン×餅）の全国展開",
+      "category": "パン・ベーカリー",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "total": 24,
+      "reason": "セブンイレブンが6月9日より全国発売。複数メディア・SNSで同時期に確認。クロワッサン生地・もちフィリング・きなこ・黒蜜等の業務用素材に直結。",
+      "sources": [
+        "https://article.yahoo.co.jp/detail/773ca7e2c0b9e879e93d015bd390d639db220ef9",
+        "https://prtimes.jp/main/html/rd/p/000000062.000075032.html",
+        "https://shingekifood.com/entry/2026/06/02/064400"
+      ]
+    },
+    {
+      "rank": 2,
+      "theme": "夏フルーツ系フローズンドリンク（ピーチ・メロン・マンゴー）",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "total": 23,
+      "reason": "タリーズ・ドトール・エクセルシオール・ゴディバ・スタバが同時期に展開。冷凍ピーチ・冷凍マンゴー・フルーツピューレ・ヨーグルトベースに接続。",
+      "sources": [
+        "https://entabe.jp/60615/summary-2026-june-cafechain-release-new-drinks",
+        "https://report.iko-yo.net/articles/31279",
+        "https://www.fashion-press.net/news/147078"
+      ]
+    },
+    {
+      "rank": 3,
+      "theme": "生ドーナツ・もっちゅりん（もちもち食感ドーナツ）ブーム",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 4,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "total": 23,
+      "reason": "ミスドもっちゅりん再登場・不二家生ドーナツ新発売が同時期に重なる。ドーナツ生地・もちフィリング・シャンテクリーム・生クリームに直結。",
+      "sources": [
+        "https://article.yahoo.co.jp/detail/1e60f0f7883cb78f73985831458bf5e4b4220cce",
+        "https://lee.hpplus.jp/column/3627563/",
+        "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60596"
+      ]
+    },
+    {
+      "rank": 4,
+      "theme": "ファミマ×Afternoon Tea 紅茶スイーツフェア（全28種）",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 4,
+        "継続可能性": 3
+      },
+      "total": 22,
+      "reason": "6月16日発売・過去最多28種展開でメディア集中報道。アールグレイ風味素材・カヌレ型・スコーン生地・紅茶フレーバーに接続。",
+      "sources": [
+        "https://news.mynavi.jp/article/20260615-4583829/",
+        "https://mdpr.jp/gourmet/detail/4796402",
+        "https://rurubu.jp/andmore/article/24911"
+      ]
+    },
+    {
+      "rank": 5,
+      "theme": "レモンスイーツの多業態展開（ティラミス・パンケーキ・ラングドシャ）",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "total": 22,
+      "reason": "第3弾まとめ記事が出るほど継続的に新商品が投入。レモン果汁・レモン果皮・レモンカード・レモンフレーバーに接続。",
+      "sources": [
+        "https://entabe.jp/60629/summary-2026-june-release-new-lemon-sweets-3rd"
+      ]
+    },
+    {
+      "rank": 6,
+      "theme": "宮崎マンゴー使用スイーツ・産地訴求デザート",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "total": 20,
+      "reason": "ジェラートピケカフェ・シナボン・ドトール等が宮崎県産マンゴーを使用した限定商品を展開。産地訴求の業務用提案に接続。",
+      "sources": [
+        "https://entabe.jp/60639/summary-2026-june-release-mango-sweets"
+      ]
+    },
+    {
+      "rank": 7,
+      "theme": "かき氷・夏限定氷菓の多業態展開",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 3
+      },
+      "total": 19,
+      "reason": "ジョナサン・かっぱ寿司・ビッグボーイ・PABLO等が6月にかき氷新商品を投入。かき氷シロップ・トッピング素材の業務用提案に接続。",
+      "sources": [
+        "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60596"
+      ]
+    },
+    {
+      "rank": 8,
+      "theme": "スターバックス ハニーバナナフラペチーノ（廃棄削減訴求）",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 3,
+        "継続可能性": 3
+      },
+      "total": 18,
+      "reason": "「もったいないバナナ」使用でサステナビリティ訴求。バナナピューレ・バナナパウダー・はちみつの業務用提案に接続。",
+      "sources": [
+        "https://entabe.jp/60615/summary-2026-june-cafechain-release-new-drinks",
+        "https://report.iko-yo.net/articles/31279"
+      ]
+    },
+    {
+      "rank": 9,
+      "theme": "グルテンフリー・米粉スイーツ（ベローチェ レモンレアチーズケーキ）",
+      "category": "健康志向・高付加価値",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 3,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "total": 18,
+      "reason": "カフェ・ベローチェが米粉使用グルテンフリーのレモンレアチーズケーキを6月18日発売。米粉・グルテンフリー素材の業務用提案に接続。",
+      "sources": [
+        "https://entabe.jp/60629/summary-2026-june-release-new-lemon-sweets-3rd"
+      ]
+    },
+    {
+      "rank": 10,
+      "theme": "高タンパク・ヨーグルトスイーツ（パルテノ マンゴー&パイン）",
+      "category": "健康志向・高付加価値",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 3,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "total": 18,
+      "reason": "森永乳業パルテノがプロテイン10g含有のマンゴー&パインソース入りを6月2日発売。高タンパクヨーグルト・フルーツソースの業務用提案に接続。",
+      "sources": [
+        "https://entabe.jp/60639/summary-2026-june-release-mango-sweets"
+      ]
+    },
+    {
+      "rank": 11,
+      "theme": "スコーンクロワッサン（スコーン×クロワッサン複合生地）",
+      "category": "パン・ベーカリー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 3,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 3
+      },
+      "total": 18,
+      "reason": "ファミマがAfternoon Tea監修でアールグレイの生スコーンクロワッサンを6月16日発売。スコーン生地・クロワッサン生地・アールグレイクリームに接続。",
+      "sources": [
+        "https://news.mynavi.jp/article/20260615-4583829/"
+      ]
+    },
+    {
+      "rank": 12,
+      "theme": "ドラゴンフルーツ・トロピカルフルーツ系ドリンク",
+      "category": "カフェメニュー",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 3,
+        "メディア露出": 4,
+        "業務用接続性": 3,
+        "継続可能性": 3
+      },
+      "total": 16,
+      "reason": "ドトールがドラゴンフルーツヨーグルン・ライチ&マンゴージャスミンを6月25日発売。トロピカルフルーツソース・ドラゴンフルーツパウダーに接続。",
+      "sources": [
+        "https://entabe.jp/60615/summary-2026-june-cafechain-release-new-drinks"
+      ]
+    },
+    {
+      "rank": 13,
+      "theme": "割って食べる演出スイーツ（パリチョコ割りティラミス）",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 3,
+        "メディア露出": 3,
+        "業務用接続性": 3,
+        "継続可能性": 3
+      },
+      "total": 16,
+      "reason": "エクセルシオールカフェが「割って食べるパリチョコレモンティラミス」を6月25日発売。チョコプレート・ティラミスムース・演出素材に接続。",
+      "sources": [
+        "https://entabe.jp/60629/summary-2026-june-release-new-lemon-sweets-3rd"
+      ]
+    },
+    {
+      "rank": 14,
+      "theme": "ミルフィユ・パイ生地スイーツの季節限定展開",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 3,
+        "メディア露出": 3,
+        "業務用接続性": 4,
+        "継続可能性": 3
+      },
+      "total": 16,
+      "reason": "ミルフィユメゾンフランセがレモン&アールグレイの季節限定品を6月1日発売。フランス産パイ生地・レモンクリーム・アールグレイクリームに接続。",
+      "sources": [
+        "https://entabe.jp/60629/summary-2026-june-release-new-lemon-sweets-3rd"
+      ]
+    }
+  ],
+  "selected_top5": [
+    "クロッチ（クロワッサン×餅）の全国展開",
+    "夏フルーツ系フローズンドリンク（ピーチ・メロン・マンゴー）",
+    "生ドーナツ・もっちゅりん（もちもち食感ドーナツ）ブーム",
+    "ファミマ×Afternoon Tea 紅茶スイーツフェア（全28種）",
+    "レモンスイーツの多業態展開（ティラミス・パンケーキ・ラングドシャ）"
+  ],
+  "scoring_axes": {
+    "話題性": "SNS・メディアでの話題量と拡散速度",
+    "検索需要": "消費者の検索行動・関心の強さ",
+    "メディア露出": "飲食メディア・ニュースサイトでの記事数",
+    "業務用接続性": "製菓製パン・外食カフェ向け業務用素材への提案接続しやすさ",
+    "継続可能性": "トレンドの持続期間・繰り返し需要の見込み"
+  },
+  "notes": "今週は韓国発クロッチのコンビニ全国展開が最大の話題。夏フルーツ系フローズンドリンクはカフェ各社が横並びで展開しており業務用素材提案の好機。生ドーナツ・もちもち食感は複数ブランドが同時期に投入し、業務用接続性が高い。"
+}
