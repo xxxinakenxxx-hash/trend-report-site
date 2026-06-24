@@ -170,8 +170,8 @@ export default function Home() {
           <p className="text-sm text-center">
             <span className="text-amber-400 font-bold mr-2">💡 今週の営業で使える一言</span>
             <span className="text-slate-300">
-              「今週は、塩バターでパンに初夏の塩気を足し、
-              <strong className="text-white">メロンとレモンで冷感・爽やかさ</strong>を作る提案が有効です」
+              「今週はロイヤルホストのパンケーキ冷凍化が話題です。御社の定番スイーツも、
+              <strong className="text-white">弊社の冷凍生地や冷凍耐性ソース</strong>を使えば、手軽に冷凍食品として横展開できます。」
             </span>
           </p>
         </div>

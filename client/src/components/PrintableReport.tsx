@@ -45,8 +45,8 @@ export default function PrintableReport() {
       <div className="print-tip-box">
         <span className="print-tip-label">💡 今週の営業で使える一言</span>
         <p className="print-tip-text">
-          「今週は、塩バターでパンに初夏の塩気を足し、
-          <strong>メロンとレモンで冷感・爽やかさ</strong>を作る提案が有効です」
+          「今週はロイヤルホストのパンケーキ冷凍化が話題です。御社の定番スイーツも、
+          <strong>弊社の冷凍生地や冷凍耐性ソース</strong>を使えば、手軽に冷凍食品として横展開できます。」
         </p>
       </div>
 
