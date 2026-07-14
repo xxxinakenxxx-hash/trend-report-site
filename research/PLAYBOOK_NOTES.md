@@ -79,3 +79,32 @@ git config user.email "270020554+xxxinakenxxx-hash@users.noreply.github.com"
 git commit --amend --reset-author --no-edit
 git push origin main --force
 ```
+
+---
+
+## 2026-07-14 記録：クレジット消費安定化のための設計方針
+
+### 問題の認識
+
+毎回の自動処理でクレジット消費が安定しない原因は、「チェックや確認を増やすこと」ではなく、**失敗が発生してリカバリー処理が積み重なること**にある。チェックを増やすこと自体がクレジットを消費するため、解決策は「失敗しない設計にする」ことに絞る。
+
+### 対策1：trendData.ts / archiveData.ts の書き換えは `file write` 一発書き込みに統一する
+
+スクリプトを作成 → 実行 → 失敗 → 修正 → 再実行という往復がクレジット浪費の最大原因。ファイルの現在の構造を読んだうえで、`file write` ツールでファイル全体を直接書き込む1ステップに集約する。正規表現マッチに依存するスクリプト方式は使わない。
+
+### 対策2：調査ログJSONはPythonのdictを `json.dumps()` で生成する
+
+文字列として手書きすると引用符・特殊文字のエスケープミスが起きる。PythonのdictオブジェクトをそのままJSON出力すれば構文エラーは原理的に発生しない。
+
+```python
+import json
+
+log = {
+    "period": {"id": "2026-07-w3", ...},
+    "candidates": {...},
+    ...
+}
+
+with open('xxx_research_log.json', 'w', encoding='utf-8') as f:
+    json.dump(log, f, ensure_ascii=False, indent=2)
+```
