@@ -1,0 +1,224 @@
+from __future__ import annotations
+
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+PERIOD = {
+    "id": "2026-07-w3",
+    "label": "2026年7月第3週",
+    "start_date": "2026-07-08",
+    "end_date": "2026-07-14",
+    "published_at": "2026-07-15",
+    "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+}
+
+QUERIES = [
+    "2026年7月 パン ベーカリー 新商品 トレンド",
+    "2026年7月 コンビニ パン 新発売 ベーカリー",
+    "2026年7月 スイーツ 洋菓子 新商品 トレンド",
+    "2026年7月 コンビニ スイーツ 新発売 フェア",
+    "2026年7月 カフェチェーン 新商品 夏 ドリンク スイーツ",
+    "2026年7月 外食チェーン デザート 新商品",
+    "2026年7月 冷凍食品 冷凍スイーツ 新商品 健康志向",
+    "2026年7月 高付加価値食品 プロテイン 発酵",
+    "2026年7月 高加水パン もっちり 新商品 フジパン",
+    "2026年7月 バナナスイーツ 新商品",
+    "2026年7月 キャラクターカフェ 夏 メニュー",
+    "2026年7月15日 食品 新商品 スイーツ パン カフェ 冷凍",
+]
+
+SOURCE_CATALOG = [
+    {"title": "累計販売数2,000万食を突破 ファミマ『超も～っちりパン』", "url": "https://prtimes.jp/main/html/rd/p/000002403.000046210.html", "publisher": "PR TIMES（ファミリーマート）", "date": "2026-07-10", "type": "press_release"},
+    {"title": "フジパン初の高加水製法『潤rich』", "url": "https://www.fujipan.co.jp/news/053529.html", "publisher": "フジパン", "date": "2026-07-01", "type": "press_release"},
+    {"title": "2026年7月発売 バナナスイーツ新商品まとめ", "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60862", "publisher": "えん食べ（ドコモ）", "date": "2026-07-13", "type": "media"},
+    {"title": "ミニオンと不二家が初コラボ", "url": "https://prtimes.jp/main/html/rd/p/000000453.000097396.html", "publisher": "PR TIMES（不二家）", "date": "2026-07-07", "type": "press_release"},
+    {"title": "冷凍食品、時代のニーズ応え需要拡大", "url": "https://shokuhin.net/153392/2026/07/13/kakou/reishoku/", "publisher": "食品新聞", "date": "2026-07-13", "type": "media"},
+    {"title": "味の素冷凍食品 26年秋季新商品", "url": "https://shokuhin.net/153424/2026/07/13/kakou/reishoku/", "publisher": "食品新聞", "date": "2026-07-13", "type": "media"},
+    {"title": "Kirby Cafe Summer 2026", "url": "https://soranews24.com/2026/07/07/kirby-cafe-gets-even-cuter-with-new-summer-menu-and-dishware-you-can-take-homephotos/", "publisher": "SoraNews24", "date": "2026-07-07", "type": "media"},
+    {"title": "Kirby Cafe Summer 2026 公式リリース", "url": "https://prtimes.jp/main/html/rd/p/000002104.000022901.html", "publisher": "PR TIMES", "date": "2026-07-02", "type": "press_release"},
+    {"title": "Starbucks Japan summer drinks and dunking pastry", "url": "https://japantoday.com/category/features/new-products/starbucks-japan-releases-new-limited-edition-summer-drinks%E2%80%A6and-a-pastry-for-dunking", "publisher": "Japan Today", "date": "2026-06-17", "type": "media"},
+    {"title": "セブン『フルーツミックス』サンド", "url": "https://prtimes.jp/main/html/rd/p/000000959.000155396.html", "publisher": "PR TIMES（セブン‐イレブン）", "date": "2026-07-10", "type": "press_release"},
+    {"title": "セブン新作フルーツミックスサンド", "url": "https://macaro-ni.jp/177050", "publisher": "macaroni", "date": "2026-07-14", "type": "media"},
+    {"title": "アルロース採用が加速 25年度は前年比160％成長", "url": "https://shokuhin.net/153180/2026/07/09/kakou/satou/", "publisher": "食品新聞", "date": "2026-07-09", "type": "media"},
+    {"title": "高たんぱく冷凍弁当『ジム飯』", "url": "https://prtimes.jp/main/html/rd/p/000000915.000155396.html", "publisher": "PR TIMES（セブン‐イレブン）", "date": "2026-07-03", "type": "press_release"},
+    {"title": "2026年7月最新 コンビニ夏アイス新作特集", "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60840", "publisher": "えん食べ（ドコモ）", "date": "2026-07-11", "type": "media"},
+    {"title": "ローソン桃づくし", "url": "https://www.lawson.co.jp/recommend/original/detail/1529638_1996.html", "publisher": "ローソン", "date": "2026-07-07", "type": "official"},
+    {"title": "2026年7月 ラムネ味スイーツ新商品まとめ", "url": "https://entabe.jp/60866/summary-2026-july-new-release-ramune-sweets", "publisher": "えん食べ", "date": "2026-07-13", "type": "media"},
+    {"title": "ペンギンベーカリー パンのすいぞくかん", "url": "https://topics.smt.docomo.ne.jp/article/fanfunfukuoka/life/fanfunfukuoka-321025", "publisher": "ファンファン福岡（ドコモ）", "date": "2026-07-13", "type": "media"},
+    {"title": "ザバス BIOPRO ヨーグルト味", "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/06_09/index.html", "publisher": "明治", "date": "2026-06-23", "type": "press_release"},
+]
+
+CANDIDATES = [
+    {
+        "theme": "高加水・超もっちり食感パンの量販化",
+        "category": "パン・ベーカリー",
+        "scores": {"話題性": 5, "検索需要": 5, "メディア露出": 5, "業務用接続性": 5, "継続可能性": 5},
+        "reason": "ファミリーマートのシリーズが約3か月で累計2,000万食を突破し、同時期にフジパンも加水率約90%の『潤rich』を発売。コンビニとホールセール双方で食感価値が拡大し、吸水性改良材・湯種・フィリングの提案へ直結する。",
+        "sources": ["https://prtimes.jp/main/html/rd/p/000002403.000046210.html", "https://www.fujipan.co.jp/news/053529.html"],
+    },
+    {
+        "theme": "バナナスイーツの業態横断展開",
+        "category": "スイーツ・洋菓子",
+        "scores": {"話題性": 5, "検索需要": 5, "メディア露出": 5, "業務用接続性": 4, "継続可能性": 4},
+        "reason": "サンマルクカフェ、ギンビス、不二家、東京ばな奈×フルグラ、PABLOが7月に同時展開。チョコ・キャラメル・チーズ・キャラクターとの組み合わせが多く、ピューレ、クリーム、フレーバー、冷凍果肉を横展開できる。",
+        "sources": ["https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60862", "https://prtimes.jp/main/html/rd/p/000000453.000097396.html"],
+    },
+    {
+        "theme": "冷凍ワンプレートの定着と300万トン市場",
+        "category": "冷凍食品・冷凍スイーツ",
+        "scores": {"話題性": 4, "検索需要": 5, "メディア露出": 5, "業務用接続性": 5, "継続可能性": 3},
+        "reason": "2025年の国内冷凍食品消費量が302万9,325トンで初めて300万トンを突破し、主食とおかずを組み合わせたワンプレートが伸長。冷凍素材、レンジ対応、個食、時短の提案に直結する。",
+        "sources": ["https://shokuhin.net/153392/2026/07/13/kakou/reishoku/", "https://shokuhin.net/153424/2026/07/13/kakou/reishoku/"],
+    },
+    {
+        "theme": "アルロース採用拡大と低糖質設計",
+        "category": "健康志向・高付加価値食品",
+        "scores": {"話題性": 3, "検索需要": 4, "メディア露出": 5, "業務用接続性": 5, "継続可能性": 4},
+        "reason": "松谷化学工業のアルロース事業が2025年度に前年比160%成長。飲料・菓子・ベーカリーで砂糖代替だけでなく味質設計を含めた提案余地がある。ただし健康・機能性表現は表示根拠と法令確認を前提とする。",
+        "sources": ["https://shokuhin.net/153180/2026/07/09/kakou/satou/"],
+    },
+    {
+        "theme": "キャラクターカフェのメニュー×物販一体化",
+        "category": "カフェメニュー",
+        "scores": {"話題性": 5, "検索需要": 4, "メディア露出": 5, "業務用接続性": 4, "継続可能性": 3},
+        "reason": "カービィカフェが夏限定メニューに皿・ボウル・マドラー・ボトルを組み込み、飲食体験と持ち帰り物販を一体化。客単価向上、写真映え、限定性を同時に設計する提案例として有効。",
+        "sources": ["https://soranews24.com/2026/07/07/kirby-cafe-gets-even-cuter-with-new-summer-menu-and-dishware-you-can-take-homephotos/", "https://prtimes.jp/main/html/rd/p/000002104.000022901.html"],
+    },
+    {
+        "theme": "高たんぱく冷凍ワンプレート『ジム飯』",
+        "category": "健康志向・高付加価値食品",
+        "scores": {"話題性": 4, "検索需要": 4, "メディア露出": 4, "業務用接続性": 5, "継続可能性": 3},
+        "reason": "セブン限定の冷凍弁当がたんぱく質30.5～47.3gと簡便性を両立。フィットネス監修、栄養成分の可視化、本格味を組み合わせた個食設計として、冷凍惣菜・カフェ軽食の提案に接続できる。",
+        "sources": ["https://prtimes.jp/main/html/rd/p/000000915.000155396.html"],
+    },
+    {
+        "theme": "柑橘×コーヒーとディップ用ペストリー",
+        "category": "カフェメニュー",
+        "scores": {"話題性": 4, "検索需要": 4, "メディア露出": 4, "業務用接続性": 4, "継続可能性": 4},
+        "reason": "スターバックスがコーヒー×レモン、炭酸、フォーム、ドリンクに浸すペストリーを投入。夏の清涼感と体験性を同時に作る構成で、柑橘ピューレ、シロップ、炭酸、焼菓子のセット提案が可能。",
+        "sources": ["https://japantoday.com/category/features/new-products/starbucks-japan-releases-new-limited-edition-summer-drinks%E2%80%A6and-a-pastry-for-dunking", "https://soranews24.com/2026/06/17/starbucks-japan-releases-new-limited-edition-summer-drinksand-a-pastry-for-dunking/"],
+    },
+    {
+        "theme": "ココア食パンの夏フルーツサンド",
+        "category": "パン・ベーカリー",
+        "scores": {"話題性": 4, "検索需要": 4, "メディア露出": 4, "業務用接続性": 4, "継続可能性": 4},
+        "reason": "セブンが夏いちご・パイン・黄桃・ホイップをココア食パンで挟む518円商品を発売。パン自体の色と風味を変えることで断面価値とご褒美単価を高める手法が、ベーカリー提案に応用しやすい。",
+        "sources": ["https://prtimes.jp/main/html/rd/p/000000959.000155396.html", "https://macaro-ni.jp/177050"],
+    },
+    {
+        "theme": "名店監修・素材訴求による冷凍食品のプレミアム化",
+        "category": "冷凍食品・冷凍スイーツ",
+        "scores": {"話題性": 3, "検索需要": 4, "メディア露出": 4, "業務用接続性": 5, "継続可能性": 3},
+        "reason": "味の素冷凍食品がブラックアンガス牛100%ハンバーグ、名店監修炒飯、XO醤焼売を投入。素材名、監修、別添調味料を使った価値向上は業務用冷凍半製品にも展開できる。",
+        "sources": ["https://shokuhin.net/153424/2026/07/13/kakou/reishoku/"],
+    },
+    {
+        "theme": "コンビニ夏アイスの果実・再現系競争",
+        "category": "冷凍食品・冷凍スイーツ",
+        "scores": {"話題性": 4, "検索需要": 4, "メディア露出": 4, "業務用接続性": 4, "継続可能性": 3},
+        "reason": "セブン・ローソン・ファミリーマートが、すいか・桃・チョコミントなど夏向けアイスを集中投入。果実感、食感再現、限定フレーバーが主要な競争軸で、冷凍デザートやパフェ素材提案につながる。",
+        "sources": ["https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60840"],
+    },
+    {
+        "theme": "桃づくしの多品種フェア継続",
+        "category": "スイーツ・洋菓子",
+        "scores": {"話題性": 4, "検索需要": 4, "メディア露出": 4, "業務用接続性": 4, "継続可能性": 3},
+        "reason": "ローソンが2週連続で桃商品を投入し、他社・専門店でも桃スイーツが継続。単品ではなくシュー、ロール、ゼリー、ドリンクなど面で見せる売場・フェア提案が有効。前号TOP1のため今週は順位を抑制。",
+        "sources": ["https://www.lawson.co.jp/recommend/original/detail/1529638_1996.html", "https://macaro-ni.jp/176945"],
+    },
+    {
+        "theme": "ラムネ味スイーツの夏季横断展開",
+        "category": "スイーツ・洋菓子",
+        "scores": {"話題性": 4, "検索需要": 4, "メディア露出": 4, "業務用接続性": 3, "継続可能性": 3},
+        "reason": "マクドナルド、不二家、すき家、ロッテ、森永製菓が7月にラムネ味を展開。色、清涼感、懐かしさを活かせる一方、季節性が強いため継続性は中程度。",
+        "sources": ["https://entabe.jp/60866/summary-2026-july-new-release-ramune-sweets"],
+    },
+    {
+        "theme": "夏休み向けキャラクターパンのシリーズ化",
+        "category": "パン・ベーカリー",
+        "scores": {"話題性": 4, "検索需要": 3, "メディア露出": 4, "業務用接続性": 4, "継続可能性": 3},
+        "reason": "ペンギンベーカリーが『パンのすいぞくかん』を期間限定展開。成形・色・ネーミングでファミリー来店を促す企画は、夏休みの店頭イベントや複数SKU提案に応用できる。",
+        "sources": ["https://topics.smt.docomo.ne.jp/article/fanfunfukuoka/life/fanfunfukuoka-321025"],
+    },
+    {
+        "theme": "発酵プロテイン飲料の常温・携帯化",
+        "category": "健康志向・高付加価値食品",
+        "scores": {"話題性": 3, "検索需要": 4, "メディア露出": 4, "業務用接続性": 3, "継続可能性": 3},
+        "reason": "明治が発酵プロテイン15g、常温保存、キャップ付き容器を組み合わせた飲料を展開。高栄養・携帯性の需要は続くが、前号TOP3で扱ったため今週の新規性は低く評価した。健康効果は断定しない。",
+        "sources": ["https://www.meiji.co.jp/corporate/pressrelease/2026/06_09/index.html"],
+    },
+]
+
+AXES = ["話題性", "検索需要", "メディア露出", "業務用接続性", "継続可能性"]
+for candidate in CANDIDATES:
+    candidate["total"] = sum(candidate["scores"][axis] for axis in AXES)
+
+CANDIDATES.sort(key=lambda item: (-item["total"], -item["scores"]["業務用接続性"], -item["scores"]["メディア露出"], item["theme"]))
+for rank, candidate in enumerate(CANDIDATES, start=1):
+    candidate["rank"] = rank
+
+selected_top5 = [candidate["theme"] for candidate in CANDIDATES[:5]]
+
+header = "| 順位 | テーマ | カテゴリ | 話題性 | 検索需要 | メディア露出 | 業務用接続性 | 継続可能性 | 合計 | 主な根拠URL |\n|---:|---|---|---:|---:|---:|---:|---:|---:|---|\n"
+rows = []
+for item in CANDIDATES:
+    urls = "<br>".join(f"[{idx + 1}]({url})" for idx, url in enumerate(item["sources"]))
+    rows.append(
+        f'| {item["rank"]} | {item["theme"]} | {item["category"]} | '
+        f'{item["scores"]["話題性"]} | {item["scores"]["検索需要"]} | {item["scores"]["メディア露出"]} | '
+        f'{item["scores"]["業務用接続性"]} | {item["scores"]["継続可能性"]} | **{item["total"]}** | {urls} |'
+    )
+
+markdown = f"""# 週次食品トレンド候補 5軸スコアリング表
+
+**対象期間:** {PERIOD['start_date']}〜{PERIOD['end_date']}  
+**発行日:** {PERIOD['published_at']}  
+**担当想定:** 製菓製パン・外食カフェ向け業務用卸の営業企画
+
+各軸は5点満点です。合計点が同点の場合は、**業務用接続性、メディア露出、テーマ名**の順で順位を決定しました。検索需要は公開Web上の露出、複数ブランド展開、販売実績、季節性を用いた相対評価であり、検索ボリューム実測値ではありません。
+
+{header}{chr(10).join(rows)}
+
+## 選定結果
+
+今週号のTOP5は、**{selected_top5[0]}、{selected_top5[1]}、{selected_top5[2]}、{selected_top5[3]}、{selected_top5[4]}**です。前号で上位採用済みの「桃づくし」「発酵プロテイン」は、話題が継続していても新規性の重複を避けるため順位を抑制しました。
+
+## 評価上の注意
+
+健康・栄養・機能性に関する項目は、商品表示および公表された栄養成分の範囲で記載し、疾病予防・治療・身体機能改善を断定していません。SNS上の話題は補助材料に限定し、採用テーマは企業公式情報または飲食・食品媒体で確認しました。
+"""
+
+log = {
+    "period": PERIOD,
+    "role_context": "製菓製パン・外食カフェ向け業務用卸の営業企画担当",
+    "research_scope": {
+        "sources": ["飲食メディアの記事", "コンビニ・外食チェーン・カフェチェーンの新商品情報", "食品メーカーの新商品情報", "レシピサイトの人気テーマ", "公開SNS上で確認できる食品関連の話題"],
+        "priority_period": "直近1か月以内",
+        "rules": ["複数媒体で確認できるテーマを優先", "古い情報を今週のトレンドとして扱わない", "SNSだけを根拠に断定しない", "根拠URLを必ず記載", "健康効果・医療効果・機能性は断定しない"],
+    },
+    "search_queries": QUERIES,
+    "source_catalog": SOURCE_CATALOG,
+    "candidates": CANDIDATES,
+    "selected_top5": selected_top5,
+    "scoring_axes": {
+        "話題性": "SNS・ニュース等での盛り上がり度（5点満点）",
+        "検索需要": "消費者関心の相対評価。検索ボリューム実測値ではない（5点満点）",
+        "メディア露出": "複数媒体での確認可否（5点満点）",
+        "業務用接続性": "製菓製パン・外食カフェ向け提案への直結度（5点満点）",
+        "継続可能性": "一過性でなく継続するトレンドか（5点満点）",
+    },
+    "notes": "高加水・もっちり食感は、ファミリーマートの販売実績とフジパンの量産化が同時に確認でき、今週最も業務用提案に接続しやすい。バナナは複数業態での横断展開、冷凍食品は300万トン市場とワンプレート伸長、アルロースは採用増、キャラクターカフェは飲食と物販の一体化を評価した。",
+}
+
+repo = Path(__file__).resolve().parents[1]
+external_root = Path("/home/ubuntu/trend_research")
+for directory in [external_root, external_root / "logs", repo / "research" / "logs"]:
+    directory.mkdir(parents=True, exist_ok=True)
+
+(external_root / "2026-07-w3_scoring.md").write_text(markdown, encoding="utf-8")
+(external_root / "logs" / "2026-07-w3_research_log.json").write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+(repo / "research" / "2026-07-w3_scoring.md").write_text(markdown, encoding="utf-8")
+(repo / "research" / "logs" / "2026-07-w3_research_log.json").write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+(repo / "research" / "2026-07-w3_candidates.json").write_text(json.dumps(CANDIDATES, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(json.dumps({"candidate_count": len(CANDIDATES), "selected_top5": selected_top5, "markdown": str(external_root / '2026-07-w3_scoring.md'), "log": str(external_root / 'logs' / '2026-07-w3_research_log.json')}, ensure_ascii=False, indent=2))

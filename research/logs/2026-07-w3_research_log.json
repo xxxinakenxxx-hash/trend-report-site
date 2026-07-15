@@ -2,10 +2,10 @@
   "period": {
     "id": "2026-07-w3",
     "label": "2026年7月第3週",
-    "start_date": "2026-07-07",
-    "end_date": "2026-07-13",
-    "published_at": "2026-07-14",
-    "generated_at_utc": "2026-07-14T00:00:00.000000+00:00"
+    "start_date": "2026-07-08",
+    "end_date": "2026-07-14",
+    "published_at": "2026-07-15",
+    "generated_at_utc": "2026-07-15T00:15:50.416496+00:00"
   },
   "role_context": "製菓製パン・外食カフェ向け業務用卸の営業企画担当",
   "research_scope": {
@@ -27,387 +27,406 @@
   },
   "search_queries": [
     "2026年7月 パン ベーカリー 新商品 トレンド",
-    "2026年7月 コンビニ パン 新発売",
-    "2026年7月 スイーツ 新商品 カフェ トレンド",
-    "2026年7月 コンビニ スイーツ 新発売 セブン ローソン",
-    "2026年7月 カフェチェーン 新商品 夏",
-    "2026年7月 桃 スイーツ トレンド コンビニ カフェ",
-    "2026年7月 進化系かき氷 パティスリー トレンド",
-    "2026年7月 ドバイチョコ 新商品 コンビニ",
-    "2026年7月 アールグレイ メロンパン コンビニ",
-    "2026年7月 ミニオンズ コラボ スイーツ カフェ",
-    "2026年7月 ザバス BIOPRO プロテイン 新発売",
-    "2026年7月 アヲハタ くちどけフローズン 新商品グランプリ",
-    "2026年7月 丸亀製麺 プリン 新商品",
-    "2026年7月 スシロー 抹茶 ブリュレ チーズケーキ"
+    "2026年7月 コンビニ パン 新発売 ベーカリー",
+    "2026年7月 スイーツ 洋菓子 新商品 トレンド",
+    "2026年7月 コンビニ スイーツ 新発売 フェア",
+    "2026年7月 カフェチェーン 新商品 夏 ドリンク スイーツ",
+    "2026年7月 外食チェーン デザート 新商品",
+    "2026年7月 冷凍食品 冷凍スイーツ 新商品 健康志向",
+    "2026年7月 高付加価値食品 プロテイン 発酵",
+    "2026年7月 高加水パン もっちり 新商品 フジパン",
+    "2026年7月 バナナスイーツ 新商品",
+    "2026年7月 キャラクターカフェ 夏 メニュー",
+    "2026年7月15日 食品 新商品 スイーツ パン カフェ 冷凍"
   ],
   "source_catalog": [
     {
-      "title": "ローソンから "桃づくし" の新商品9品が発売！おすすめスイーツ2品を食べ比べ",
-      "url": "https://macaro-ni.jp/176945",
-      "publisher": "macaroni（マカロニ）",
-      "date": "2026-07-07",
-      "type": "media"
+      "title": "累計販売数2,000万食を突破 ファミマ『超も～っちりパン』",
+      "url": "https://prtimes.jp/main/html/rd/p/000002403.000046210.html",
+      "publisher": "PR TIMES（ファミリーマート）",
+      "date": "2026-07-10",
+      "type": "press_release"
     },
     {
-      "title": "【7月7日～発売】セブン・ファミマ・ローソン新作スイーツ特集",
-      "url": "https://entabe.jp/60839/seven-eleven-familymart-lawson-new-sweets-july-2026",
-      "publisher": "えん食べ",
-      "date": "2026-07-07",
-      "type": "media"
+      "title": "フジパン初の高加水製法『潤rich』",
+      "url": "https://www.fujipan.co.jp/news/053529.html",
+      "publisher": "フジパン",
+      "date": "2026-07-01",
+      "type": "press_release"
     },
     {
-      "title": "【2026年7月第2週】コンビニサンドイッチ・コンビニパンランキング1位はアールグレイメロンパン！",
-      "url": "https://mognavi.jp/news/matome/gen-pickupRanking-23544/",
-      "publisher": "もぐナビ",
+      "title": "2026年7月発売 バナナスイーツ新商品まとめ",
+      "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60862",
+      "publisher": "えん食べ（ドコモ）",
       "date": "2026-07-13",
       "type": "media"
     },
     {
-      "title": "【都内近郊】2026夏最旬「進化系かき氷」味も見た目も異次元の贅沢感！",
-      "url": "https://report.iko-yo.net/articles/32130",
-      "publisher": "いこーよ",
-      "date": "2026-07-08",
-      "type": "media"
-    },
-    {
-      "title": "おいしく手軽に摂取できる常温タイプで登場「ザバス BIOPRO ヨーグルト味」",
-      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/06_09/index.html",
-      "publisher": "明治株式会社 プレスリリース",
-      "date": "2026-06-23",
-      "type": "press_release"
-    },
-    {
-      "title": "明治「ザバス BIOPRO ヨーグルト味」発売 / 「ザバス BIOPRO」誕生",
-      "url": "https://news.yahoo.co.jp/articles/a66e0ed935eb5753aa3e550044d894df68f5d2e7",
-      "publisher": "Yahoo!ニュース",
-      "date": "2026-07-01",
-      "type": "media"
-    },
-    {
-      "title": "スシロー「年に一度の別格まぐろ祭」で全品"赤しゃり"に。老舗茶舗のお抹茶ブリュレアチーズケーキも",
-      "url": "https://gourmet.watch.impress.co.jp/docs/news/2119783.html",
-      "publisher": "グルメウォッチ（インプレス）",
-      "date": "2026-07-03",
-      "type": "media"
-    },
-    {
-      "title": "サンマルクカフェ×映画『ミニオンズ＆モンスターズ』コラボメニュー",
-      "url": "https://lp.p.pia.jp/article/news/487446/index.html",
-      "publisher": "ぴあ",
-      "date": "2026-07-03",
-      "type": "media"
-    },
-    {
-      "title": "世界的人気キャラクター「ミニオン」と不二家が初コラボ！",
+      "title": "ミニオンと不二家が初コラボ",
       "url": "https://prtimes.jp/main/html/rd/p/000000453.000097396.html",
       "publisher": "PR TIMES（不二家）",
       "date": "2026-07-07",
       "type": "press_release"
     },
     {
-      "title": "Why rice flour baking is booming in Japan",
-      "url": "https://japantoday.com/category/features/food/why-rice-flour-baking-is-booming-in-japan",
-      "publisher": "Japan Today",
-      "date": "2026-06-15",
+      "title": "冷凍食品、時代のニーズ応え需要拡大",
+      "url": "https://shokuhin.net/153392/2026/07/13/kakou/reishoku/",
+      "publisher": "食品新聞",
+      "date": "2026-07-13",
       "type": "media"
     },
     {
-      "title": "日本最大規模の食の発表会で決定！「新商品グランプリ2026」アヲハタ「くちどけフローズン 洋梨」受賞",
-      "url": "https://www.walkerplus.com/article/1334533/",
-      "publisher": "ウォーカープラス",
-      "date": "2026-07-04",
+      "title": "味の素冷凍食品 26年秋季新商品",
+      "url": "https://shokuhin.net/153424/2026/07/13/kakou/reishoku/",
+      "publisher": "食品新聞",
+      "date": "2026-07-13",
       "type": "media"
     },
     {
-      "title": "【2026年7月発売】外食チェーン スイーツ新商品まとめ！丸亀製麺「丸亀うどんプリン」など",
-      "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60815",
-      "publisher": "えん食べ（ドコモ）",
+      "title": "Kirby Cafe Summer 2026",
+      "url": "https://soranews24.com/2026/07/07/kirby-cafe-gets-even-cuter-with-new-summer-menu-and-dishware-you-can-take-homephotos/",
+      "publisher": "SoraNews24",
       "date": "2026-07-07",
       "type": "media"
     },
     {
-      "title": "【韓国発の人気スイーツ】新商品「ドバイもちもちチョコクッキー」～26年上半期トレンドランキング上位の「ドバイチョコ餅」の商品化～",
-      "url": "https://prtimes.jp/main/html/rd/p/000000138.000069992.html",
+      "title": "Kirby Cafe Summer 2026 公式リリース",
+      "url": "https://prtimes.jp/main/html/rd/p/000002104.000022901.html",
       "publisher": "PR TIMES",
+      "date": "2026-07-02",
+      "type": "press_release"
+    },
+    {
+      "title": "Starbucks Japan summer drinks and dunking pastry",
+      "url": "https://japantoday.com/category/features/new-products/starbucks-japan-releases-new-limited-edition-summer-drinks%E2%80%A6and-a-pastry-for-dunking",
+      "publisher": "Japan Today",
+      "date": "2026-06-17",
+      "type": "media"
+    },
+    {
+      "title": "セブン『フルーツミックス』サンド",
+      "url": "https://prtimes.jp/main/html/rd/p/000000959.000155396.html",
+      "publisher": "PR TIMES（セブン‐イレブン）",
+      "date": "2026-07-10",
+      "type": "press_release"
+    },
+    {
+      "title": "セブン新作フルーツミックスサンド",
+      "url": "https://macaro-ni.jp/177050",
+      "publisher": "macaroni",
+      "date": "2026-07-14",
+      "type": "media"
+    },
+    {
+      "title": "アルロース採用が加速 25年度は前年比160％成長",
+      "url": "https://shokuhin.net/153180/2026/07/09/kakou/satou/",
+      "publisher": "食品新聞",
+      "date": "2026-07-09",
+      "type": "media"
+    },
+    {
+      "title": "高たんぱく冷凍弁当『ジム飯』",
+      "url": "https://prtimes.jp/main/html/rd/p/000000915.000155396.html",
+      "publisher": "PR TIMES（セブン‐イレブン）",
       "date": "2026-07-03",
       "type": "press_release"
     },
     {
-      "title": "【2026年7月発売】桃スイーツ新商品まとめ第2弾！アンテノール「桃のショートケーキ」・MERCER bis「白桃ジャスミンシフォンケーキ」など",
-      "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60829",
+      "title": "2026年7月最新 コンビニ夏アイス新作特集",
+      "url": "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60840",
       "publisher": "えん食べ（ドコモ）",
       "date": "2026-07-11",
       "type": "media"
+    },
+    {
+      "title": "ローソン桃づくし",
+      "url": "https://www.lawson.co.jp/recommend/original/detail/1529638_1996.html",
+      "publisher": "ローソン",
+      "date": "2026-07-07",
+      "type": "official"
+    },
+    {
+      "title": "2026年7月 ラムネ味スイーツ新商品まとめ",
+      "url": "https://entabe.jp/60866/summary-2026-july-new-release-ramune-sweets",
+      "publisher": "えん食べ",
+      "date": "2026-07-13",
+      "type": "media"
+    },
+    {
+      "title": "ペンギンベーカリー パンのすいぞくかん",
+      "url": "https://topics.smt.docomo.ne.jp/article/fanfunfukuoka/life/fanfunfukuoka-321025",
+      "publisher": "ファンファン福岡（ドコモ）",
+      "date": "2026-07-13",
+      "type": "media"
+    },
+    {
+      "title": "ザバス BIOPRO ヨーグルト味",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/06_09/index.html",
+      "publisher": "明治",
+      "date": "2026-06-23",
+      "type": "press_release"
     }
   ],
   "candidates": [
     {
-      "rank": 1,
-      "theme": "ローソン「桃づくし」2週連続フェア（9品展開）",
-      "category": "スイーツ・洋菓子",
-      "scores": {
-        "話題性": 5,
-        "検索需要": 5,
-        "メディア露出": 5,
-        "業務用接続性": 5,
-        "継続可能性": 4
-      },
-      "total": 24,
-      "reason": "7月7日より2週連続で桃スイーツ9品を一斉展開。macaroni・えん食べ・もぐナビ・ローソン公式など複数媒体で確認。桃のシュー・タルト・ロールケーキ・ゼリー・アイス・フラッペと多品種展開で業務用桃フィリング・桃ピューレ・桃ジャムの提案に直結。夏の旬フルーツ素材として継続性も高い。",
-      "sources": [
-        "https://macaro-ni.jp/176945",
-        "https://entabe.jp/60839/seven-eleven-familymart-lawson-new-sweets-july-2026",
-        "https://www.lawson.co.jp/recommend/original/detail/1529638_1996.html"
-      ]
-    },
-    {
-      "rank": 2,
-      "theme": "ファミマ「Afternoon Tea監修 アールグレイメロンパン」2週連続1位",
+      "theme": "高加水・超もっちり食感パンの量販化",
       "category": "パン・ベーカリー",
       "scores": {
         "話題性": 5,
         "検索需要": 5,
         "メディア露出": 5,
         "業務用接続性": 5,
-        "継続可能性": 4
+        "継続可能性": 5
       },
-      "total": 24,
-      "reason": "6月16日発売のAfternoon Tea監修商品。もぐナビコンビニパンランキングで7月第1週・第2週と2週連続1位を獲得。評価点4.7/7.0（21件）と高評価。アールグレイ風味のビスケット生地＋クリームという構成が業務用紅茶フレーバー素材・茶葉エキス・アールグレイクリームの提案に直結。",
+      "reason": "ファミリーマートのシリーズが約3か月で累計2,000万食を突破し、同時期にフジパンも加水率約90%の『潤rich』を発売。コンビニとホールセール双方で食感価値が拡大し、吸水性改良材・湯種・フィリングの提案へ直結する。",
       "sources": [
-        "https://mognavi.jp/news/matome/gen-pickupRanking-23544/",
-        "https://www.hiskip.com/drink-sweets/bread/melon/18520.html",
-        "https://news.yahoo.co.jp/expert/articles/3ba81ce5d5d23d378a0e87c12e8688802774478f"
-      ]
+        "https://prtimes.jp/main/html/rd/p/000002403.000046210.html",
+        "https://www.fujipan.co.jp/news/053529.html"
+      ],
+      "total": 25,
+      "rank": 1
     },
     {
-      "rank": 3,
-      "theme": "明治「ザバス BIOPRO」発酵プロテイン飲料（プロテイン×乳酸菌）",
-      "category": "健康志向食品",
+      "theme": "バナナスイーツの業態横断展開",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 5,
+        "検索需要": 5,
+        "メディア露出": 5,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "サンマルクカフェ、ギンビス、不二家、東京ばな奈×フルグラ、PABLOが7月に同時展開。チョコ・キャラメル・チーズ・キャラクターとの組み合わせが多く、ピューレ、クリーム、フレーバー、冷凍果肉を横展開できる。",
+      "sources": [
+        "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60862",
+        "https://prtimes.jp/main/html/rd/p/000000453.000097396.html"
+      ],
+      "total": 23,
+      "rank": 2
+    },
+    {
+      "theme": "冷凍ワンプレートの定着と300万トン市場",
+      "category": "冷凍食品・冷凍スイーツ",
       "scores": {
         "話題性": 4,
         "検索需要": 5,
         "メディア露出": 5,
-        "業務用接続性": 4,
-        "継続可能性": 5
+        "業務用接続性": 5,
+        "継続可能性": 3
       },
-      "total": 23,
-      "reason": "6月30日発売。プロテインを乳酸菌で発酵させた「発酵プロテイン」15g配合の常温保存可能飲料。明治プレスリリース・Yahoo!ニュース・北海道新聞・沖縄タイムス・FYTTEなど複数媒体で確認。「プロテイン×腸活」という二重訴求が市場拡大中。業務用プロテイン素材・発酵素材の提案機会として継続性が高い。",
+      "reason": "2025年の国内冷凍食品消費量が302万9,325トンで初めて300万トンを突破し、主食とおかずを組み合わせたワンプレートが伸長。冷凍素材、レンジ対応、個食、時短の提案に直結する。",
       "sources": [
-        "https://www.meiji.co.jp/corporate/pressrelease/2026/06_09/index.html",
-        "https://news.yahoo.co.jp/articles/a66e0ed935eb5753aa3e550044d894df68f5d2e7",
-        "https://www.hokkaido-np.co.jp/article/1331039/"
-      ]
+        "https://shokuhin.net/153392/2026/07/13/kakou/reishoku/",
+        "https://shokuhin.net/153424/2026/07/13/kakou/reishoku/"
+      ],
+      "total": 22,
+      "rank": 3
     },
     {
-      "rank": 4,
-      "theme": "2026夏「進化系かき氷」パティスリー仕立てトレンド",
-      "category": "スイーツ・洋菓子",
+      "theme": "アルロース採用拡大と低糖質設計",
+      "category": "健康志向・高付加価値食品",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 5,
+        "業務用接続性": 5,
+        "継続可能性": 4
+      },
+      "reason": "松谷化学工業のアルロース事業が2025年度に前年比160%成長。飲料・菓子・ベーカリーで砂糖代替だけでなく味質設計を含めた提案余地がある。ただし健康・機能性表現は表示根拠と法令確認を前提とする。",
+      "sources": [
+        "https://shokuhin.net/153180/2026/07/09/kakou/satou/"
+      ],
+      "total": 21,
+      "rank": 4
+    },
+    {
+      "theme": "キャラクターカフェのメニュー×物販一体化",
+      "category": "カフェメニュー",
       "scores": {
         "話題性": 5,
         "検索需要": 4,
         "メディア露出": 5,
         "業務用接続性": 4,
-        "継続可能性": 4
+        "継続可能性": 3
       },
-      "total": 22,
-      "reason": "2026年夏のかき氷は「パティスリー仕立て」がキーワード。ホテルニューオータニ・シャングリ・ラ東京・フェアモント東京・CE LA VI TOKYOなど高級ホテル・カフェが相次いで展開。天然氷・フランス菓子技法・味変ソースなど高付加価値化が進む。いこーよ・Hanako等複数媒体で確認。業務用シロップ・天然氷・フルーツピューレの提案に接続。",
+      "reason": "カービィカフェが夏限定メニューに皿・ボウル・マドラー・ボトルを組み込み、飲食体験と持ち帰り物販を一体化。客単価向上、写真映え、限定性を同時に設計する提案例として有効。",
       "sources": [
-        "https://report.iko-yo.net/articles/32130",
-        "https://voyage-media.com/gourmet-dining/osaka-sweets-summer/",
-        "https://hanako.tokyo/food/99704/"
-      ]
+        "https://soranews24.com/2026/07/07/kirby-cafe-gets-even-cuter-with-new-summer-menu-and-dishware-you-can-take-homephotos/",
+        "https://prtimes.jp/main/html/rd/p/000002104.000022901.html"
+      ],
+      "total": 21,
+      "rank": 5
     },
     {
-      "rank": 5,
-      "theme": "スシロー×森半「老舗茶舗のお抹茶ブリュレアチーズケーキ」",
+      "theme": "高たんぱく冷凍ワンプレート『ジム飯』",
+      "category": "健康志向・高付加価値食品",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 5,
+        "継続可能性": 3
+      },
+      "reason": "セブン限定の冷凍弁当がたんぱく質30.5～47.3gと簡便性を両立。フィットネス監修、栄養成分の可視化、本格味を組み合わせた個食設計として、冷凍惣菜・カフェ軽食の提案に接続できる。",
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000915.000155396.html"
+      ],
+      "total": 20,
+      "rank": 6
+    },
+    {
+      "theme": "ココア食パンの夏フルーツサンド",
+      "category": "パン・ベーカリー",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 4
+      },
+      "reason": "セブンが夏いちご・パイン・黄桃・ホイップをココア食パンで挟む518円商品を発売。パン自体の色と風味を変えることで断面価値とご褒美単価を高める手法が、ベーカリー提案に応用しやすい。",
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000959.000155396.html",
+        "https://macaro-ni.jp/177050"
+      ],
+      "total": 20,
+      "rank": 7
+    },
+    {
+      "theme": "柑橘×コーヒーとディップ用ペストリー",
       "category": "カフェメニュー",
       "scores": {
         "話題性": 4,
         "検索需要": 4,
-        "メディア露出": 5,
-        "業務用接続性": 5,
+        "メディア露出": 4,
+        "業務用接続性": 4,
         "継続可能性": 4
       },
-      "total": 22,
-      "reason": "7月3日より全国スシローで提供開始。老舗茶舗・森半との本格コラボで「提供直前にブリュレする」演出が話題。グルメウォッチ・ミニストップ記事・SNS等複数媒体で確認。外食チェーンでの本格抹茶素材活用は業務用抹茶パウダー・抹茶ペースト・チーズケーキ素材の提案に直結。",
+      "reason": "スターバックスがコーヒー×レモン、炭酸、フォーム、ドリンクに浸すペストリーを投入。夏の清涼感と体験性を同時に作る構成で、柑橘ピューレ、シロップ、炭酸、焼菓子のセット提案が可能。",
       "sources": [
-        "https://gourmet.watch.impress.co.jp/docs/news/2119783.html",
-        "http://www.excite.co.jp/news/article/Cobs_3198201/",
-        "https://www.instagram.com/reel/DZz4rLTSRYh/"
-      ]
+        "https://japantoday.com/category/features/new-products/starbucks-japan-releases-new-limited-edition-summer-drinks%E2%80%A6and-a-pastry-for-dunking",
+        "https://soranews24.com/2026/06/17/starbucks-japan-releases-new-limited-edition-summer-drinksand-a-pastry-for-dunking/"
+      ],
+      "total": 20,
+      "rank": 8
     },
     {
-      "rank": 6,
-      "theme": "セブンイレブン「黒糖蒸しパン」「ずっしりケーキ 洋梨」新発売",
-      "category": "パン・ベーカリー",
-      "scores": {
-        "話題性": 4,
-        "検索需要": 4,
-        "メディア露出": 4,
-        "業務用接続性": 4,
-        "継続可能性": 3
-      },
-      "total": 19,
-      "reason": "7月14日発売。黒糖パウダーをじゅわっと染み込ませた蒸しパンと、洋梨を使ったケーキ。SNS・Instagram等で確認。",
-      "sources": [
-        "https://www.instagram.com/p/DatiVXvzrMj/",
-        "https://www.threads.com/@shingeki_japan/post/DZng_YXkx56/"
-      ]
-    },
-    {
-      "rank": 7,
-      "theme": "ドバイチョコ餅・ドバイチョコパイ コンビニ展開継続",
-      "category": "スイーツ・洋菓子",
-      "scores": {
-        "話題性": 4,
-        "検索需要": 4,
-        "メディア露出": 4,
-        "業務用接続性": 4,
-        "継続可能性": 3
-      },
-      "total": 19,
-      "reason": "2026年上半期トレンドランキング上位の「ドバイチョコ餅」が商品化継続。PR TIMES・SNS等複数媒体で確認。カダイフ素材・ピスタチオペーストの業務用提案に接続。",
-      "sources": [
-        "https://prtimes.jp/main/html/rd/p/000000138.000069992.html",
-        "https://okashi-to-watashi.jp/post/2682"
-      ]
-    },
-    {
-      "rank": 8,
-      "theme": "米粉パン・グルテンフリーベーカリーブーム継続",
-      "category": "パン・ベーカリー",
-      "scores": {
-        "話題性": 3,
-        "検索需要": 4,
-        "メディア露出": 4,
-        "業務用接続性": 5,
-        "継続可能性": 5
-      },
-      "total": 21,
-      "reason": "Japan Today等英語メディアでも「Why rice flour baking is booming in Japan」として取り上げられるほど定着。グルテンフリー市場は年平均9.73%成長予測。業務用米粉・グルテンフリーミックスの提案に直結。",
-      "sources": [
-        "https://japantoday.com/category/features/food/why-rice-flour-baking-is-booming-in-japan",
-        "https://www.fortunebusinessinsights.com/jp/%E6%A5%AD%E7%95%8C-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88/%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC%E9%A3%9F%E5%93%81%E5%B8%82%E5%A0%B4-100188"
-      ]
-    },
-    {
-      "rank": 9,
-      "theme": "アヲハタ「くちどけフローズン 洋梨」新商品グランプリ受賞",
+      "theme": "名店監修・素材訴求による冷凍食品のプレミアム化",
       "category": "冷凍食品・冷凍スイーツ",
       "scores": {
         "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 5,
+        "継続可能性": 3
+      },
+      "reason": "味の素冷凍食品がブラックアンガス牛100%ハンバーグ、名店監修炒飯、XO醤焼売を投入。素材名、監修、別添調味料を使った価値向上は業務用冷凍半製品にも展開できる。",
+      "sources": [
+        "https://shokuhin.net/153424/2026/07/13/kakou/reishoku/"
+      ],
+      "total": 19,
+      "rank": 9
+    },
+    {
+      "theme": "コンビニ夏アイスの果実・再現系競争",
+      "category": "冷凍食品・冷凍スイーツ",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 3
+      },
+      "reason": "セブン・ローソン・ファミリーマートが、すいか・桃・チョコミントなど夏向けアイスを集中投入。果実感、食感再現、限定フレーバーが主要な競争軸で、冷凍デザートやパフェ素材提案につながる。",
+      "sources": [
+        "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60840"
+      ],
+      "total": 19,
+      "rank": 10
+    },
+    {
+      "theme": "桃づくしの多品種フェア継続",
+      "category": "スイーツ・洋菓子",
+      "scores": {
+        "話題性": 4,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 4,
+        "継続可能性": 3
+      },
+      "reason": "ローソンが2週連続で桃商品を投入し、他社・専門店でも桃スイーツが継続。単品ではなくシュー、ロール、ゼリー、ドリンクなど面で見せる売場・フェア提案が有効。前号TOP1のため今週は順位を抑制。",
+      "sources": [
+        "https://www.lawson.co.jp/recommend/original/detail/1529638_1996.html",
+        "https://macaro-ni.jp/176945"
+      ],
+      "total": 19,
+      "rank": 11
+    },
+    {
+      "theme": "夏休み向けキャラクターパンのシリーズ化",
+      "category": "パン・ベーカリー",
+      "scores": {
+        "話題性": 4,
         "検索需要": 3,
         "メディア露出": 4,
         "業務用接続性": 4,
-        "継続可能性": 4
+        "継続可能性": 3
       },
+      "reason": "ペンギンベーカリーが『パンのすいぞくかん』を期間限定展開。成形・色・ネーミングでファミリー来店を促す企画は、夏休みの店頭イベントや複数SKU提案に応用できる。",
+      "sources": [
+        "https://topics.smt.docomo.ne.jp/article/fanfunfukuoka/life/fanfunfukuoka-321025"
+      ],
       "total": 18,
-      "reason": "日本最大規模の食の発表会「新商品グランプリ2026」冷凍食品部門受賞。ウォーカープラスで確認。冷凍フルーツスイーツの高付加価値化トレンドを象徴。",
-      "sources": [
-        "https://www.walkerplus.com/article/1334533/"
-      ]
+      "rank": 12
     },
     {
-      "rank": 10,
-      "theme": "丸亀製麺「丸亀うどんプリン」外食チェーンのスイーツ強化",
-      "category": "カフェメニュー",
+      "theme": "ラムネ味スイーツの夏季横断展開",
+      "category": "スイーツ・洋菓子",
       "scores": {
-        "話題性": 3,
-        "検索需要": 3,
+        "話題性": 4,
+        "検索需要": 4,
         "メディア露出": 4,
-        "業務用接続性": 4,
+        "業務用接続性": 3,
         "継続可能性": 3
       },
+      "reason": "マクドナルド、不二家、すき家、ロッテ、森永製菓が7月にラムネ味を展開。色、清涼感、懐かしさを活かせる一方、季節性が強いため継続性は中程度。",
+      "sources": [
+        "https://entabe.jp/60866/summary-2026-july-new-release-ramune-sweets"
+      ],
+      "total": 18,
+      "rank": 13
+    },
+    {
+      "theme": "発酵プロテイン飲料の常温・携帯化",
+      "category": "健康志向・高付加価値食品",
+      "scores": {
+        "話題性": 3,
+        "検索需要": 4,
+        "メディア露出": 4,
+        "業務用接続性": 3,
+        "継続可能性": 3
+      },
+      "reason": "明治が発酵プロテイン15g、常温保存、キャップ付き容器を組み合わせた飲料を展開。高栄養・携帯性の需要は続くが、前号TOP3で扱ったため今週の新規性は低く評価した。健康効果は断定しない。",
+      "sources": [
+        "https://www.meiji.co.jp/corporate/pressrelease/2026/06_09/index.html"
+      ],
       "total": 17,
-      "reason": "外食チェーンがスイーツ強化に動く流れを象徴。えん食べ等で確認。",
-      "sources": [
-        "https://topics.smt.docomo.ne.jp/article/entabe/trend/entabe-60815"
-      ]
-    },
-    {
-      "rank": 11,
-      "theme": "サンマルクカフェ×映画「ミニオンズ＆モンスターズ」コラボ",
-      "category": "カフェメニュー",
-      "scores": {
-        "話題性": 4,
-        "検索需要": 3,
-        "メディア露出": 4,
-        "業務用接続性": 3,
-        "継続可能性": 2
-      },
-      "total": 16,
-      "reason": "7月3日〜9月4日まで全国展開。ぴあ・fashion-press等複数媒体で確認。期間限定のIPコラボは一過性が高い。",
-      "sources": [
-        "https://lp.p.pia.jp/article/news/487446/index.html",
-        "https://www.fashion-press.net/news/147764"
-      ]
-    },
-    {
-      "rank": 12,
-      "theme": "不二家×ミニオン初コラボ バナナ味菓子・洋菓子展開",
-      "category": "スイーツ・洋菓子",
-      "scores": {
-        "話題性": 4,
-        "検索需要": 3,
-        "メディア露出": 4,
-        "業務用接続性": 3,
-        "継続可能性": 2
-      },
-      "total": 16,
-      "reason": "7月7日より発売。PR TIMES・えん食べ等で確認。バナナ風味の菓子・洋菓子展開。IPコラボは一過性が高い。",
-      "sources": [
-        "https://prtimes.jp/main/html/rd/p/000000453.000097396.html"
-      ]
-    },
-    {
-      "rank": 13,
-      "theme": "セブン「黒糖烏龍ミルクティーパフェ」和×洋ドリンクスイーツ",
-      "category": "スイーツ・洋菓子",
-      "scores": {
-        "話題性": 3,
-        "検索需要": 3,
-        "メディア露出": 3,
-        "業務用接続性": 4,
-        "継続可能性": 3
-      },
-      "total": 16,
-      "reason": "7月8日発売。えん食べ等で確認。烏龍茶×黒糖×ミルクティーという和洋折衷の組み合わせが業務用茶葉素材の提案に接続。",
-      "sources": [
-        "https://entabe.jp/60839/seven-eleven-familymart-lawson-new-sweets-july-2026"
-      ]
-    },
-    {
-      "rank": 14,
-      "theme": "ローソン「盛りすぎ！ツナたまごサンド」51%増量キャンペーン第4弾",
-      "category": "カフェメニュー",
-      "scores": {
-        "話題性": 3,
-        "検索需要": 3,
-        "メディア露出": 4,
-        "業務用接続性": 2,
-        "継続可能性": 2
-      },
-      "total": 14,
-      "reason": "もぐナビランキング3位。「盛りすぎ」シリーズの継続展開。業務用接続性は低い。",
-      "sources": [
-        "https://mognavi.jp/news/matome/gen-pickupRanking-23544/"
-      ]
+      "rank": 14
     }
   ],
   "selected_top5": [
-    "ローソン「桃づくし」2週連続フェア（9品展開）",
-    "ファミマ「Afternoon Tea監修 アールグレイメロンパン」2週連続1位",
-    "明治「ザバス BIOPRO」発酵プロテイン飲料（プロテイン×乳酸菌）",
-    "2026夏「進化系かき氷」パティスリー仕立てトレンド",
-    "スシロー×森半「老舗茶舗のお抹茶ブリュレアチーズケーキ」"
+    "高加水・超もっちり食感パンの量販化",
+    "バナナスイーツの業態横断展開",
+    "冷凍ワンプレートの定着と300万トン市場",
+    "アルロース採用拡大と低糖質設計",
+    "キャラクターカフェのメニュー×物販一体化"
   ],
   "scoring_axes": {
     "話題性": "SNS・ニュース等での盛り上がり度（5点満点）",
-    "検索需要": "消費者の関心・検索ボリューム推定（5点満点）",
+    "検索需要": "消費者関心の相対評価。検索ボリューム実測値ではない（5点満点）",
     "メディア露出": "複数媒体での確認可否（5点満点）",
-    "業務用接続性": "製菓製パン・カフェ向け提案への直結度（5点満点）",
+    "業務用接続性": "製菓製パン・外食カフェ向け提案への直結度（5点満点）",
     "継続可能性": "一過性でなく継続するトレンドか（5点満点）"
   },
-  "notes": "今週は「桃」素材の一斉展開（ローソン9品）が最大の話題。ファミマのアールグレイメロンパンは2週連続ランキング1位と安定した人気。健康志向では明治ザバスBIOPROが「プロテイン×腸活」という新軸で市場拡大中。かき氷は高級ホテル・パティスリーが牽引する「進化系」が定着。スシロー×森半の抹茶コラボは外食チェーンでの本格素材活用を示す事例として注目。"
+  "notes": "高加水・もっちり食感は、ファミリーマートの販売実績とフジパンの量産化が同時に確認でき、今週最も業務用提案に接続しやすい。バナナは複数業態での横断展開、冷凍食品は300万トン市場とワンプレート伸長、アルロースは採用増、キャラクターカフェは飲食と物販の一体化を評価した。"
 }
