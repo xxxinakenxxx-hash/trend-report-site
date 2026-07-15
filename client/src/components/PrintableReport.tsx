@@ -2,7 +2,7 @@
 // Design: 印刷専用レイアウト — A4縦・白背景・モノクロ対応
 // @media print で表示される。画面上は非表示。
 
-import { trends, emailContent, scoreLabels } from '@/lib/trendData';
+import { trends, emailContent, scoreLabels, weeklySalesTip } from '@/lib/trendData';
 import { getLatestIssue } from '@/lib/archiveData';
 
 function ScoreRow({ label, value }: { label: string; value: number }) {
@@ -45,8 +45,7 @@ export default function PrintableReport() {
       <div className="print-tip-box">
         <span className="print-tip-label">💡 今週の営業で使える一言</span>
         <p className="print-tip-text">
-          「今週はロイヤルホストのパンケーキ冷凍化が話題です。御社の定番スイーツも、
-          <strong>弊社の冷凍生地や冷凍耐性ソース</strong>を使えば、手軽に冷凍食品として横展開できます。」
+          「{weeklySalesTip}」
         </p>
       </div>
 

@@ -3,7 +3,7 @@
 // selectedCategories で絞り込んだトレンドのみを印刷する
 // @media print で表示。画面上は非表示。
 
-import { trends, emailContent, scoreLabels } from '@/lib/trendData';
+import { trends, emailContent, scoreLabels, weeklySalesTip } from '@/lib/trendData';
 import { getLatestIssue } from '@/lib/archiveData';
 
 interface PrintableReportFilteredProps {
@@ -81,8 +81,7 @@ export default function PrintableReportFiltered({ selectedCategories }: Printabl
       <div className="print-tip-box">
         <span className="print-tip-label">💡 今週の営業で使える一言</span>
         <p className="print-tip-text">
-          「今週はロイヤルホストのパンケーキ冷凍化が話題です。御社の定番スイーツも、
-          <strong>弊社の冷凍生地や冷凍耐性ソース</strong>を使えば、手軽に冷凍食品として横展開できます。」
+          「{weeklySalesTip}」
         </p>
       </div>
 

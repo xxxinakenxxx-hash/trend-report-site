@@ -243,6 +243,7 @@ export const reportMeta = {
   "publishedAt": "2026-07-15",
   "nextPublishDate": "2026-07-22"
 };
+export const weeklySalesTip = '今週は、食感・定番果実・省人化の3方向で動きが出ています。御社の既存メニューを変えすぎず、翌日食感、複数SKU、提供時間のどれを改善できるか、一緒に小さく試作しませんか。';
 export const scoreLabels: (keyof TrendScore)[] = [
   '話題性',
   '検索需要',
