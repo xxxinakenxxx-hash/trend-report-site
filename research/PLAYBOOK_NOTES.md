@@ -49,35 +49,83 @@ PR TIMES とえん食べしかトレンド情報はないのかという問題�
 
 ---
 
-## 2026-06-24 記録：Vercel BLOCKED問題の原因と対策
+## 2026-06-24 記録 / 2026-07-29 改訂：Vercel BLOCKED問題の根本対策
 
 ### 問題
 
-GitHub の noreply メールアドレスが `2.70020554e+08+...`（指数表記）になるとVercelがデプロイをBLOCKする。
+GitHub の noreply メールアドレスが `2.70020554e+08+...`（指数表記）になるとVercelがデプロイをBLOCKする。2026-06-24 に初発し、2026-07-29 に再発した。
 
-### 原因
+### 根本原因（2026-07-29 特定）
 
-`git config user.email` に設定されたアドレスが指数表記になっている場合がある。
+問題の所在は **`~/.gitconfig`（グローバル設定）** にある。
 
-### 対策（毎回のコミット前に確認）
-
-```bash
-git config user.email
-# 正しい形式: 270020554+xxxinakenxxx-hash@users.noreply.github.com
-# 誤った形式: 2.70020554e+08+xxxinakenxxx-hash@users.noreply.github.com
+```
+# ~/.gitconfig の [user] セクション（誤った状態）
+[user]
+    email = 2.70020554e+08+xxxinakenxxx-hash@users.noreply.github.com
 ```
 
-指数表記になっていた場合は即座に修正：
+サンドボックスのセッションが切り替わるたびに `~/.gitconfig` が指数表記に戻る。ローカルリポジトリの `.git/config` で上書きしても、**新しいクローン・新しいセッションでは常にグローバル設定が優先される**ため、毎回再発する。
+
+### 根本対策（2026-07-29 適用済み）
+
+**グローバル設定を直接修正する。** ローカルリポジトリへの個別設定では再発を防げない。
 
 ```bash
-git config user.email "270020554+xxxinakenxxx-hash@users.noreply.github.com"
+# グローバル設定を正しい形式に修正（セッション開始時に1回実行）
+git config --global user.email "270020554+xxxinakenxxx-hash@users.noreply.github.com"
+
+# 修正後の確認
+cat ~/.gitconfig | grep email
+# → email = 270020554+xxxinakenxxx-hash@users.noreply.github.com
 ```
 
-すでにコミット済みの場合は amend + force push で修正：
+### プレイブックへの組み込み（次号以降の手順に追加）
+
+コミット前の必須チェックとして、以下をプレイブックの「GitHubへのpush」ステップの**直前**に挿入する。
 
 ```bash
+# ステップ: コミット前のメールアドレス検証（毎回必須）
+EMAIL=$(git config --global user.email)
+if [[ "$EMAIL" == *"e+08"* ]]; then
+  echo "[ERROR] メールアドレスが指数表記です。修正します。"
+  git config --global user.email "270020554+xxxinakenxxx-hash@users.noreply.github.com"
+fi
+git config --global user.email  # 正しい形式であることを目視確認
+```
+
+### コミット済みの場合のリカバリー手順
+
+```bash
+# 1. グローバル設定を修正
+git config --global user.email "270020554+xxxinakenxxx-hash@users.noreply.github.com"
+
+# 2. 最新コミットのauthorを修正（空コミットの場合は --allow-empty を追加）
 git commit --amend --reset-author --no-edit
+
+# 3. 空コミットが途中にある場合は interactive rebase で一括修正
+git rebase -i <前号のコミットハッシュ> --exec "git commit --amend --reset-author --no-edit"
+# → 空コミットでエラーが出た場合は git rebase --skip で続行
+
+# 4. force push
 git push origin main --force
+
+# 5. Vercelのデプロイが自動トリガーされるまで3〜5分待機
+# 確認方法: curl -sI https://trend-report-site.vercel.app/ | grep last-modified
+# → 今日の日付になっていればデプロイ完了
+```
+
+### Vercelデプロイ状態の確認方法
+
+Vercelダッシュボードへのログインがなくても、以下のcurlコマンドで確認できる。
+
+```bash
+# デプロイ完了の確認（last-modifiedが今日の日付 かつ x-vercel-cache: MISS であればOK）
+curl -sI "https://trend-report-site.vercel.app/" | grep -E "last-modified|x-vercel-cache"
+
+# JSバンドルに今週号のデータが含まれているか確認
+JS_URL=$(curl -s "https://trend-report-site.vercel.app/" | grep -o 'src="[^"]*\.js"' | head -1 | sed 's/src="//;s/"//')
+curl -s "https://trend-report-site.vercel.app$JS_URL" | grep -oP '第[0-9]+週' | head -3
 ```
 
 ---
